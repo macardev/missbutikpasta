@@ -10,7 +10,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen pt-16 sm:pt-20 flex items-center justify-center overflow-hidden"
       aria-label="Ana giriş"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-light-pink via-cream to-gold-light opacity-60" />
@@ -85,7 +85,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: isMobile ? 0.5 : 1, duration: isMobile ? 0.3 : 0.6 }}
-          className="mt-16 sm:mt-20"
+          className="mt-10 sm:mt-20"
         >
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 text-dark/60">
             <div className="text-center">

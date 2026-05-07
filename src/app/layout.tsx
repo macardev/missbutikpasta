@@ -38,6 +38,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180" },
+    ],
+  },
+  manifest: "/manifest.json",
   openGraph: {
     type: "website",
     locale: "tr_TR",
@@ -45,6 +55,14 @@ export const metadata: Metadata = {
     title: "Miss Butik Pasta | Gebze Özel Tasarım Pasta & Tatlı",
     description: "Kocaeli Gebze'de butik pasta, doğum günü pastası, nişan pastası ve özel tasarım tatlılar. El yapımı, butik üretim.",
     siteName: "Miss Butik Pasta",
+    images: [
+      {
+        url: "https://missbutikpasta.com/images/og-image.webp",
+        width: 1200,
+        height: 630,
+        alt: "Miss Butik Pasta - Gebze'nin En Tatlı Atölyesi",
+      },
+    ],
   },
   robots: {
     index: true,

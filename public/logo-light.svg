@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 44">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8A0BF"/>
+      <stop offset="100%" stop-color="#D48AAA"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(4, 4)">
+    <rect x="1" y="1" width="34" height="34" rx="7" fill="url(#lg)"/>
+    <path d="M8 28V10L18 20L28 10V28" stroke="#FFF5E4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M23 6l-2 2 2 2 2-2z" fill="#D4A574"/>
+  </g>
+  <text x="48" y="29" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" fill="#FFF5E4">Miss</text>
+  <text x="97" y="29" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" fill="#E8A0BF">Butik Pasta</text>
+</svg>

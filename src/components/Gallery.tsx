@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useIsMobile } from "@/lib/hooks";
 import { staggerContainer, fadeInUp, scaleIn } from "@/lib/animations";
@@ -12,49 +13,49 @@ const products = [
     title: "Doğum Günü Pastası",
     category: "Pastalar",
     description: "Kişisel tasarımlı, lezzetli doğum günü pastaları",
-    gradient: "from-pink/30 to-pink/10",
+    image: "/images/dogum-gunu-pastasi.webp",
   },
   {
     title: "Çilekli Pasta",
     category: "Pastalar",
     description: "Taze çileklerle hazırlanmış özel pasta",
-    gradient: "from-red-200/30 to-red-100/10",
+    image: "/images/cilekli-pasta.webp",
   },
   {
     title: "Çikolatalı Pasta",
     category: "Pastalar",
     description: "Belçika çikolatasıyla zengin çikolatalı pasta",
-    gradient: "from-amber-200/30 to-amber-100/10",
+    image: "/images/cikolatali-pasta.webp",
   },
   {
     title: "Tuzlu Kurabiye",
     category: "Kurabiyeler",
     description: "El yapımı, taze pişmiş tuzlu kurabiyeler",
-    gradient: "from-gold/20 to-gold-light/10",
+    image: "/images/tuzlu-kurabiye.webp",
   },
   {
     title: "Kurabiye Seti",
     category: "Kurabiyeler",
     description: "Özel günler için dekoratif kurabiye setleri",
-    gradient: "from-pink/20 to-cream",
+    image: "/images/kurabiye-seti.webp",
   },
   {
     title: "Nişan Pastası",
     category: "Özel Günler",
     description: "Zarif tasarımlı, çok katlı nişan pastaları",
-    gradient: "from-gold/20 to-light-pink",
+    image: "/images/nisan-pastasi.webp",
   },
   {
     title: "Düğün Pastası",
     category: "Özel Günler",
     description: "Hayalinizdeki düğün pastası özel tasarım",
-    gradient: "from-light-pink to-gold/20",
+    image: "/images/dugun-pastasi.webp",
   },
   {
     title: "Bebek Şekerleri",
     category: "Özel Günler",
     description: "Baby shower için özel tasarım şekerler",
-    gradient: "from-blue-100/30 to-pink/10",
+    image: "/images/bebek-sekerleri.webp",
   },
 ];
 
@@ -114,16 +115,21 @@ export default function Gallery() {
           {...staggerContainer(isMobile)}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6"
         >
-          {filtered.map((product) => (
+          {filtered.map((product, index) => (
             <motion.div
               key={product.title}
               {...scaleIn(isMobile)}
               className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
             >
-              <div className={`aspect-square bg-gradient-to-br ${product.gradient} relative overflow-hidden`}>
-                <div className="w-full h-full flex items-center justify-center">
-                  <span className="text-5xl sm:text-6xl">🧁</span>
-                </div>
+              <div className="aspect-square relative overflow-hidden bg-cream">
+                <Image
+                  src={product.image}
+                  alt={product.title}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  {...(index === 0 ? { priority: true } : {})}
+                />
                 <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/10 transition-colors" />
               </div>
               <div className="p-4 sm:p-5">

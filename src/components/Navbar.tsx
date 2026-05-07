@@ -36,10 +36,12 @@ export default function Navbar() {
       role="banner"
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between" aria-label="Ana navigasyon">
-        <Link href="/" className="flex items-center gap-2" aria-label="Miss Butik Pasta Ana Sayfa">
-          <span className="text-xl sm:text-2xl font-playfair font-bold text-dark">
-            Miss <span className="text-pink">Butik Pasta</span>
-          </span>
+        <Link href="/" className="flex items-center" aria-label="Miss Butik Pasta Ana Sayfa">
+          <img
+            src="/logo.svg"
+            alt="Miss Butik Pasta"
+            className="h-7 sm:h-8 w-auto"
+          />
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
