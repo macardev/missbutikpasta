@@ -10,6 +10,11 @@ const footerLinks = [
   { label: "İletişim", href: "#contact" },
 ];
 
+const legalLinks = [
+  { label: "KVKK Aydınlatma Metni", href: "/kvkk" },
+  { label: "Çerez Politikası", href: "/cerez-politikasi" },
+];
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -83,9 +88,22 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-cream/10 text-center">
+        <div className="mt-10 pt-6 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="flex gap-4 font-inter text-xs text-cream/40">
+            {legalLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="hover:text-pink transition-colors">
+                {link.label}
+              </Link>
+            ))}
+          </div>
           <p className="font-inter text-xs text-cream/40">
             &copy; {currentYear} Miss Butik Pasta. Tüm hakları saklıdır.
+            <span className="hidden sm:inline mx-1">|</span>
+            <br className="sm:hidden" />
+            Designed by{" "}
+            <a href="https://senninweb.com" target="_blank" rel="noopener noreferrer" className="text-pink hover:text-pink-dark transition-colors">
+              Sennin Web
+            </a>
           </p>
         </div>
       </div>
