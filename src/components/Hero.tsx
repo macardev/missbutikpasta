@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { WHATSAPP_LINK } from "@/lib/constants";
 import { useIsMobile } from "@/lib/hooks";
@@ -15,37 +14,14 @@ export default function Hero() {
     >
       <div className="absolute inset-0 bg-gradient-to-br from-light-pink via-cream to-gold-light opacity-60" />
 
-      <motion.div
-        className="absolute top-20 left-10 w-48 h-48 sm:w-72 sm:h-72 rounded-full bg-pink/20 blur-3xl"
-        animate={{
-          y: [0, -20, 0],
-          scale: [1, 1.1, 1],
-        }}
-        transition={{
-          duration: isMobile ? 4 : 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
+      <div className="absolute top-20 left-10 w-48 h-48 sm:w-72 sm:h-72 rounded-full bg-pink/20 blur-2xl sm:blur-3xl animate-blob" />
 
-      <motion.div
-        className="absolute bottom-20 right-10 w-40 h-40 sm:w-64 sm:h-64 rounded-full bg-gold/20 blur-3xl"
-        animate={{
-          y: [0, 20, 0],
-          scale: [1, 1.05, 1],
-        }}
-        transition={{
-          duration: isMobile ? 5 : 10,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
+      <div className="absolute bottom-20 right-10 w-40 h-40 sm:w-64 sm:h-64 rounded-full bg-gold/20 blur-2xl sm:blur-3xl animate-blob-2" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: isMobile ? 0.4 : 0.8, ease: "easeOut" }}
+        <div
+          className="opacity-0 animate-fade-in"
+          style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}
         >
           <p className="text-pink-dark font-inter text-sm sm:text-base font-semibold uppercase tracking-widest mb-4">
             Gebze&apos;nin En Tatlı Atölyesi
@@ -79,13 +55,11 @@ export default function Hero() {
               Ürünlerimizi Keşfet
             </Link>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: isMobile ? 0.5 : 1, duration: isMobile ? 0.3 : 0.6 }}
-          className="mt-10 sm:mt-20"
+        <div
+          className="mt-10 sm:mt-20 opacity-0 animate-fade-in"
+          style={{ animationDelay: isMobile ? "0.5s" : "0.8s", animationFillMode: "forwards" }}
         >
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 text-dark/60">
             <div className="text-center">
@@ -103,23 +77,17 @@ export default function Hero() {
               <p className="text-xs sm:text-sm font-inter mt-1">Lokal Üretim</p>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
 
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: isMobile ? 0.8 : 1.5 }}
+      <div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in"
+        style={{ animationDelay: `${isMobile ? 0.8 : 1.5}s`, animationFillMode: "forwards" }}
       >
         <div className="w-6 h-10 border-2 border-dark/20 rounded-full flex items-start justify-center p-1">
-          <motion.div
-            className="w-1.5 h-1.5 bg-dark/40 rounded-full"
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          />
+          <div className="scroll-dot w-1.5 h-1.5 bg-dark/40 rounded-full" />
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

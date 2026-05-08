@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useIsMobile } from "@/lib/hooks";
-import { fadeInUp, fadeInLeft, fadeInRight, scaleIn } from "@/lib/animations";
+import { fadeInUp, fadeInLeft, fadeInRight } from "@/lib/animations";
 import { ADDRESS, PHONE, PHONE_LINK, WHATSAPP_LINK, OPENING_HOURS } from "@/lib/constants";
 
 export default function Contact() {
