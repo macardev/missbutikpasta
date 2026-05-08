@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { WHATSAPP_LINK, INSTAGRAM_LINK } from "@/lib/constants";
 

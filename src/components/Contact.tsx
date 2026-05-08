@@ -1,13 +1,6 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useIsMobile } from "@/lib/hooks";
-import { fadeInUp, fadeInLeft, fadeInRight } from "@/lib/animations";
 import { ADDRESS, PHONE, PHONE_LINK, WHATSAPP_LINK, OPENING_HOURS } from "@/lib/constants";
 
 export default function Contact() {
-  const isMobile = useIsMobile();
-
   return (
     <section
       id="contact"
@@ -15,7 +8,7 @@ export default function Contact() {
       aria-labelledby="contact-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div {...fadeInUp(isMobile)} className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
           <p className="text-pink-dark font-inter text-sm font-semibold uppercase tracking-widest mb-3">
             İletişim
           </p>
@@ -26,10 +19,10 @@ export default function Contact() {
             Sipariş ve sorularınız için WhatsApp&apos;tan bize yazın veya
             dükkânımızı ziyaret edin.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
-          <motion.div {...fadeInLeft(isMobile)} className="space-y-8">
+          <div className="space-y-8 animate-fade-in-left">
             <div>
               <h3 className="font-playfair font-semibold text-dark text-xl mb-4">Adres</h3>
               <p className="text-dark/80 font-inter text-sm sm:text-base leading-relaxed">
@@ -75,9 +68,9 @@ export default function Contact() {
                 ))}
               </div>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div {...fadeInRight(isMobile)}>
+          <div className="animate-fade-in-right">
             <div className="aspect-square sm:aspect-[4/3] lg:aspect-square rounded-2xl overflow-hidden shadow-sm relative">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d754.9053354330372!2d29.440899269661337!3d40.814314013201965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb20c0a3fbb3e5%3A0x55033b92f75a7689!2sMevlana%20Cd.%20%26%201012%2F2.%20Sk.%2C%20Arap%C3%A7e%C5%9Fme%2C%2041400%20Gebze%2FKocaeli!5e0!3m2!1str!2str!4v1778250814753!5m2!1str!2str"
@@ -91,7 +84,7 @@ export default function Contact() {
                 allowFullScreen
               />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

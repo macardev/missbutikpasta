@@ -19,11 +19,8 @@ export default function Hero() {
       <div className="absolute bottom-20 right-10 w-40 h-40 sm:w-64 sm:h-64 rounded-full bg-gold/20 blur-2xl sm:blur-3xl animate-blob-2" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div
-          className="opacity-0 animate-fade-in"
-          style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}
-        >
-          <p className="text-pink-dark font-inter text-sm sm:text-base font-semibold uppercase tracking-widest mb-4">
+        <div>
+          <p className="text-pink-dark font-inter text-sm sm:text-base font-semibold uppercase tracking-widest mb-4 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             Gebze&apos;nin En Tatlı Atölyesi
           </p>
 

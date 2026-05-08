@@ -1,9 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useIsMobile } from "@/lib/hooks";
-import { staggerContainer, fadeInUp, scaleIn } from "@/lib/animations";
-
 const testimonials = [
   {
     name: "Ayşe Y.",
@@ -35,32 +29,27 @@ function Stars({ count }: { count: number }) {
 }
 
 export default function Testimonials() {
-  const isMobile = useIsMobile();
-
   return (
     <section
       className="py-16 sm:py-24 lg:py-32 bg-light-pink/30"
       aria-labelledby="testimonials-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div {...fadeInUp(isMobile)} className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
           <p className="text-pink-dark font-inter text-sm font-semibold uppercase tracking-widest mb-3">
             Müşteri Yorumları
           </p>
           <h2 id="testimonials-heading" className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-dark">
             Müşterilerimiz <span className="text-pink">Ne Diyor?</span>
           </h2>
-        </motion.div>
+        </div>
 
-        <motion.div
-          {...staggerContainer(isMobile)}
-          className="grid md:grid-cols-3 gap-6 lg:gap-8"
-        >
-          {testimonials.map((t) => (
-            <motion.div
+        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+          {testimonials.map((t, i) => (
+            <div
               key={t.name}
-              {...scaleIn(isMobile)}
-              className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow animate-scale-in"
+              style={{ animationDelay: `${i * 0.12}s` }}
             >
               <Stars count={t.rating} />
               <p className="mt-4 text-dark/80 font-inter text-sm sm:text-base leading-relaxed italic">
@@ -74,9 +63,9 @@ export default function Testimonials() {
                 </div>
                 <span className="font-inter font-semibold text-dark text-sm">{t.name}</span>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

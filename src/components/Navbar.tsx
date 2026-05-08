@@ -1,10 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
 import { WHATSAPP_LINK } from "@/lib/constants";
-import { useIsMobile } from "@/lib/hooks";
 
 const navLinks = [
   { label: "Hakkımızda", href: "#about" },
@@ -16,7 +14,7 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const isMobile = useIsMobile();
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -80,39 +78,34 @@ export default function Navbar() {
         </button>
       </nav>
 
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: isMobile ? 0.2 : 0.3 }}
-            className="md:hidden bg-cream/95 backdrop-blur-md border-t border-dark/5"
+      <div
+        ref={menuRef}
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        } bg-cream/95 backdrop-blur-md border-t border-dark/5`}
+      >
+        <div className="px-4 py-4 flex flex-col gap-4">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={handleNavClick}
+              className="text-dark/80 hover:text-pink-dark font-inter text-base font-medium py-2"
+            >
+              {link.label}
+            </Link>
+          ))}
+          <a
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleNavClick}
+            className="bg-pink-btn hover:bg-pink text-white px-5 py-3 rounded-full font-inter text-sm font-semibold text-center transition-colors mt-2"
           >
-            <div className="px-4 py-4 flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={handleNavClick}
-                  className="text-dark/80 hover:text-pink-dark font-inter text-base font-medium py-2"
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <a
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={handleNavClick}
-                className="bg-pink-btn hover:bg-pink text-white px-5 py-3 rounded-full font-inter text-sm font-semibold text-center transition-colors mt-2"
-              >
-                WhatsApp ile Sipariş
-              </a>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            WhatsApp ile Sipariş
+          </a>
+        </div>
+      </div>
     </header>
   );
 }

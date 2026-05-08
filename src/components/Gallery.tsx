@@ -4,7 +4,6 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useIsMobile } from "@/lib/hooks";
-import { fadeInUp } from "@/lib/animations";
 
 const slides = [
   { id: 1, alt: "Pembe Detaylı Pasta", image: "/images/pink-detailed-cake.webp" },
@@ -138,7 +137,13 @@ export default function Gallery() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          {...fadeInUp(isMobile)}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{
+            duration: isMobile ? 0.3 : 0.6,
+            ease: [0.25, 0.46, 0.45, 0.94],
+          }}
           className="text-center mb-12 sm:mb-16"
         >
           <p className="text-pink-dark font-inter text-sm font-semibold uppercase tracking-widest mb-3">
