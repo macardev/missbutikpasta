@@ -87,11 +87,11 @@ const localBusinessSchema = {
   description: "Gebze'de butik pasta, doğum günü pastası, nişan pastası ve özel tasarım tatlılar. El yapımı, butik üretim.",
   image: "https://missbutikpasta.com/images/og-image.webp",
   url: "https://missbutikpasta.com",
-  telephone: "+905363698000",
+  telephone: "+905345687783",
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Arapçeşme Mah. Mevlana Cad. 1012/2 Sk. No:16 D:8",
+    streetAddress: "Arapçeşme Mah. Mevlana Cad. 1012/2 Sk. No:7 Kat:4 D:8",
     addressLocality: "Gebze",
     addressRegion: "Kocaeli",
     postalCode: "41400",

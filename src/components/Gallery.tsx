@@ -1,77 +1,140 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useIsMobile } from "@/lib/hooks";
-import { staggerContainer, fadeInUp, scaleIn } from "@/lib/animations";
+import { fadeInUp } from "@/lib/animations";
 
-const categories = ["Tümü", "Pastalar", "Kurabiyeler", "Özel Günler"];
-
-const products = [
-  {
-    title: "Doğum Günü Pastası",
-    category: "Pastalar",
-    description: "Kişisel tasarımlı, lezzetli doğum günü pastaları",
-    image: "/images/dogum-gunu-pastasi.webp",
-  },
-  {
-    title: "Çilekli Pasta",
-    category: "Pastalar",
-    description: "Taze çileklerle hazırlanmış özel pasta",
-    image: "/images/cilekli-pasta.webp",
-  },
-  {
-    title: "Çikolatalı Pasta",
-    category: "Pastalar",
-    description: "Belçika çikolatasıyla zengin çikolatalı pasta",
-    image: "/images/cikolatali-pasta.webp",
-  },
-  {
-    title: "Tuzlu Kurabiye",
-    category: "Kurabiyeler",
-    description: "El yapımı, taze pişmiş tuzlu kurabiyeler",
-    image: "/images/tuzlu-kurabiye.webp",
-  },
-  {
-    title: "Kurabiye Seti",
-    category: "Kurabiyeler",
-    description: "Özel günler için dekoratif kurabiye setleri",
-    image: "/images/kurabiye-seti.webp",
-  },
-  {
-    title: "Nişan Pastası",
-    category: "Özel Günler",
-    description: "Zarif tasarımlı, çok katlı nişan pastaları",
-    image: "/images/nisan-pastasi.webp",
-  },
-  {
-    title: "Düğün Pastası",
-    category: "Özel Günler",
-    description: "Hayalinizdeki düğün pastası özel tasarım",
-    image: "/images/dugun-pastasi.webp",
-  },
-  {
-    title: "Bebek Şekerleri",
-    category: "Özel Günler",
-    description: "Baby shower için özel tasarım şekerler",
-    image: "/images/bebek-sekerleri.webp",
-  },
+const slides = [
+  { id: 1, alt: "Pembe Detaylı Pasta", image: "/images/pink-detailed-cake.webp" },
+  { id: 2, alt: "Yeşil Pasta", image: "/images/green-cake.webp" },
+  { id: 3, alt: "Mini Ayıcıklı Pasta", image: "/images/mini-bear-cake.webp" },
+  { id: 4, alt: "Beyaz & Altın Pasta", image: "/images/white-golden-cake.webp" },
+  { id: 5, alt: "Mor Pasta", image: "/images/purple-cake.webp" },
+  { id: 6, alt: "Ayı Balonlu Pasta", image: "/images/bear-with-baloon.webp" },
+  { id: 7, alt: "Bebek Ayaklı Pasta", image: "/images/baby-feet-cake.webp" },
+  { id: 8, alt: "Futbol Temalı Pasta", image: "/images/soccer-cake.webp" },
+  { id: 9, alt: "Doğum Günü Pastası", image: "/images/birthday-cake.webp" },
+  { id: 10, alt: "Tavşanlı Pasta", image: "/images/sweet-rabbit-cake.webp" },
+  { id: 11, alt: "Pembe Lotus Pastası", image: "/images/pink-lotus-cake.webp" },
+  { id: 12, alt: "Fami Sezer Pastası", image: "/images/fami-sezer-cake.webp" },
+  { id: 13, alt: "Öncesi Sonrası Pastası", image: "/images/before-after-cake.webp" },
+  { id: 14, alt: "Pixel Art Pasta", image: "/images/pixel-art-cake.webp" },
+  { id: 15, alt: "Çilekli Pasta", image: "/images/strawberry-cake.webp" },
 ];
 
-export default function Gallery() {
-  const [activeCategory, setActiveCategory] = useState("Tümü");
-  const isMobile = useIsMobile();
+const slideVariants = {
+  enter: (dir: number) => ({
+    x: dir > 0 ? 400 : -400,
+    opacity: 0,
+    scale: 0.9,
+    rotateY: dir > 0 ? 15 : -15,
+  }),
+  center: {
+    x: 0,
+    opacity: 1,
+    scale: 1,
+    rotateY: 0,
+  },
+  exit: (dir: number) => ({
+    x: dir > 0 ? -400 : 400,
+    opacity: 0,
+    scale: 0.9,
+    rotateY: dir > 0 ? -15 : 15,
+  }),
+};
 
-  const filtered = activeCategory === "Tümü"
-    ? products
-    : products.filter((p) => p.category === activeCategory);
+export default function Gallery() {
+  const [[current, direction], setSlideState] = useState([0, 0]);
+  const isMobile = useIsMobile();
+  const intervalRef = useRef<ReturnType<typeof setInterval>>(undefined);
+
+  const paginate = useCallback((dir: number) => {
+    setSlideState(([curr]) => {
+      let next = curr + dir;
+      if (next < 0) next = slides.length - 1;
+      if (next >= slides.length) next = 0;
+      return [next, dir];
+    });
+  }, []);
+
+  const goTo = useCallback((index: number) => {
+    setSlideState(([curr]) => {
+      if (index === curr) return [curr, 0];
+      const dir = index > curr ? 1 : -1;
+      return [index, dir];
+    });
+  }, []);
+
+  useEffect(() => {
+    intervalRef.current = setInterval(() => paginate(1), 4500);
+    return () => clearInterval(intervalRef.current);
+  }, [paginate]);
+
+  const pause = () => clearInterval(intervalRef.current);
+
+  const resume = () => {
+    clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(() => paginate(1), 4500);
+  };
+
+  const slide = slides[current];
+
+  const renderDots = (isDesktop: boolean) => (
+    <div className="absolute bottom-4 sm:bottom-5 left-1/2 -translate-x-1/2 flex gap-2 sm:gap-2.5 z-10">
+      {slides.map((_, i) => (
+        <button
+          key={i}
+          onClick={() => goTo(i)}
+          className={`rounded-full transition-all ${
+            isDesktop ? "h-3" : "h-2.5"
+          } ${
+            i === current
+              ? `${isDesktop ? "w-8" : "w-6"} bg-pink`
+              : `${isDesktop ? "w-3" : "w-2.5"} bg-white/60 hover:bg-white/80`
+          }`}
+          aria-label={`Slayt ${i + 1}`}
+        />
+      ))}
+    </div>
+  );
+
+  const renderArrows = (isDesktop: boolean) => {
+    const size = isDesktop ? "w-12 h-12" : "w-10 h-10";
+    const iconSize = isDesktop ? "w-6 h-6" : "w-5 h-5";
+
+    return (
+      <>
+        <button
+          onClick={() => paginate(-1)}
+          className={`absolute top-1/2 -translate-y-1/2 ${size} rounded-full bg-white/80 hover:bg-white flex items-center justify-center shadow-md transition-all z-10 left-3 sm:left-4`}
+          aria-label="Önceki"
+        >
+          <svg className={`${iconSize} text-dark`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button
+          onClick={() => paginate(1)}
+          className={`absolute top-1/2 -translate-y-1/2 ${size} rounded-full bg-white/80 hover:bg-white flex items-center justify-center shadow-md transition-all z-10 right-3 sm:right-4`}
+          aria-label="Sonraki"
+        >
+          <svg className={`${iconSize} text-dark`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </>
+    );
+  };
 
   return (
     <section
       id="gallery"
       className="py-16 sm:py-24 lg:py-32 bg-light-pink/30"
       aria-labelledby="gallery-heading"
+      onMouseEnter={pause}
+      onMouseLeave={resume}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -81,8 +144,11 @@ export default function Gallery() {
           <p className="text-pink-dark font-inter text-sm font-semibold uppercase tracking-widest mb-3">
             Ürünlerimiz
           </p>
-          <h2 id="gallery-heading" className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-dark">
-            Tatlı <span className="text-pink">Koleksiyonumuz</span>
+          <h2
+            id="gallery-heading"
+            className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-dark"
+          >
+            Size <span className="text-pink">Özel Tasarım Pasta</span>
           </h2>
           <p className="mt-4 text-dark/75 font-inter text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
             Her biri el yapımı, özenle hazırlanmış ürünlerimizden size en uygun
@@ -90,55 +156,69 @@ export default function Gallery() {
           </p>
         </motion.div>
 
-        <motion.div
-          {...fadeInUp(isMobile)}
-          className="flex flex-wrap justify-center gap-3 mb-10 sm:mb-14"
-        >
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              className={`px-5 py-2.5 rounded-full font-inter text-sm font-medium transition-all ${
-                activeCategory === cat
-                  ? "bg-pink text-white shadow-md shadow-pink/25"
-                  : "bg-white/70 text-dark/60 hover:bg-white hover:text-dark"
-              }`}
-              aria-pressed={activeCategory === cat}
-            >
-              {cat}
-            </button>
-          ))}
-        </motion.div>
+        <div className="relative max-w-2xl mx-auto">
+          {isMobile ? (
+            <div className="relative overflow-hidden rounded-2xl">
+              <div
+                className="flex transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
+                style={{ transform: `translateX(-${current * 100}%)` }}
+              >
+                {slides.map((s) => (
+                  <div
+                    key={s.id}
+                    className="min-w-full aspect-square relative bg-cream"
+                  >
+                    <Image
+                      src={s.image}
+                      alt={s.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
 
-        <motion.div
-          key={activeCategory}
-          {...staggerContainer(isMobile)}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6"
-        >
-          {filtered.map((product, index) => (
-            <motion.div
-              key={product.title}
-              {...scaleIn(isMobile)}
-              className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
-            >
-              <div className="aspect-square relative overflow-hidden bg-cream">
-                <Image
-                  src={product.image}
-                  alt={product.title}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  {...(index === 0 ? { priority: true } : {})}
-                />
-                <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/10 transition-colors" />
+              {renderArrows(false)}
+              {renderDots(false)}
+            </div>
+          ) : (
+            <div className="relative overflow-hidden rounded-2xl shadow-sm" style={{ perspective: 1200 }}>
+              <div className="aspect-square relative bg-cream">
+                <AnimatePresence initial={false} custom={direction} mode="popLayout">
+                  <motion.div
+                    key={current}
+                    custom={direction}
+                    variants={slideVariants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                    transition={{
+                      x: { type: "spring", stiffness: 200, damping: 26, mass: 1 },
+                      opacity: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] },
+                      scale: { type: "spring", stiffness: 200, damping: 26, mass: 1 },
+                      rotateY: { type: "spring", stiffness: 200, damping: 26, mass: 1 },
+                    }}
+                    className="absolute inset-0"
+                    style={{ backfaceVisibility: "hidden" }}
+                  >
+                    <Image
+                      src={slide.image}
+                      alt={slide.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover"
+                      priority
+                    />
+                  </motion.div>
+                </AnimatePresence>
               </div>
-              <div className="p-4 sm:p-5">
-                <h3 className="font-playfair font-semibold text-dark text-base sm:text-lg">{product.title}</h3>
-                <p className="mt-1 text-dark/60 font-inter text-sm leading-relaxed">{product.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+
+              {renderArrows(true)}
+              {renderDots(true)}
+            </div>
+          )}
+        </div>
       </div>
     </section>
   );

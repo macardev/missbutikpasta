@@ -39,7 +39,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="font-inter text-sm hover:text-pink transition-colors">
+                  <Link href={link.href} className="font-inter text-sm underline underline-offset-2 decoration-1 decoration-cream/30 hover:text-pink transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -51,10 +51,10 @@ export default function Footer() {
             <h3 className="font-playfair font-semibold text-cream text-base mb-4">İletişim</h3>
             <div className="space-y-2 font-inter text-sm">
               <p>Arapçeşme Mah. Mevlana Cad.</p>
-              <p>1012/2 Sk. No:16 D:8</p>
+              <p>1012/2 Sk. No:7 Kat:4 D:8</p>
               <p>Kocaeli/Gebze</p>
-              <a href="tel:+905363698000" className="hover:text-pink transition-colors block mt-2">
-                0536 369 80 00
+              <a href="tel:+905345687783" className="hover:text-pink transition-colors block mt-2">
+                0534 568 77 83
               </a>
             </div>
           </div>
@@ -89,19 +89,19 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="flex gap-4 font-inter text-xs text-cream/40">
+          <div className="flex gap-4 font-inter text-xs text-cream/60">
             {legalLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="hover:text-pink transition-colors">
+              <Link key={link.href} href={link.href} className="underline underline-offset-2 decoration-1 decoration-cream/30 hover:text-pink transition-colors">
                 {link.label}
               </Link>
             ))}
           </div>
-          <p className="font-inter text-xs text-cream/40">
+          <p className="font-inter text-xs text-cream/60">
             &copy; {currentYear} Miss Butik Pasta. Tüm hakları saklıdır.
             <span className="hidden sm:inline mx-1">|</span>
             <br className="sm:hidden" />
             Designed by{" "}
-            <a href="https://senninweb.com" target="_blank" rel="noopener noreferrer" className="text-pink hover:text-pink-dark transition-colors">
+             <a href="https://senninweb.com" target="_blank" rel="noopener noreferrer" className="text-pink hover:text-pink-dark underline underline-offset-2 transition-colors">
               Sennin Web
             </a>
           </p>

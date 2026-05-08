@@ -68,7 +68,7 @@ export default function Hero() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-pink hover:bg-pink-dark text-white px-8 py-4 rounded-full font-inter text-base font-semibold transition-all hover:shadow-lg hover:shadow-pink/25 w-full sm:w-auto"
+              className="bg-pink-btn hover:bg-pink text-white px-8 py-4 rounded-full font-inter text-base font-semibold transition-all hover:shadow-lg hover:shadow-pink-btn/25 w-full sm:w-auto"
             >
               WhatsApp ile Sipariş Ver
             </a>

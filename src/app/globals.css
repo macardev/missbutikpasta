@@ -4,6 +4,7 @@
   --color-cream: #FFF5E4;
   --color-pink: #E8A0BF;
   --color-pink-dark: #D48AAA;
+  --color-pink-btn: #C47A9A;
   --color-gold: #D4A574;
   --color-gold-light: #E6C9A8;
   --color-dark: #2D2016;
@@ -14,6 +15,7 @@
   --color-cream: var(--color-cream);
   --color-pink: var(--color-pink);
   --color-pink-dark: var(--color-pink-dark);
+  --color-pink-btn: var(--color-pink-btn);
   --color-gold: var(--color-gold);
   --color-gold-light: var(--color-gold-light);
   --color-dark: var(--color-dark);

@@ -78,20 +78,18 @@ export default function Contact() {
           </motion.div>
 
           <motion.div {...fadeInRight(isMobile)}>
-            <div className="aspect-square sm:aspect-[4/3] lg:aspect-square rounded-2xl bg-gradient-to-br from-gold/20 via-cream to-pink/20 overflow-hidden relative">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <svg className="w-12 h-12 sm:w-16 sm:h-16 text-dark/20 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.183c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
-                  </svg>
-                  <p className="mt-3 text-dark/40 font-inter text-sm">
-                    Google Maps haritası eklenecek
-                  </p>
-                  <p className="mt-1 text-dark/30 font-inter text-xs">
-                    Arapçeşme Mah. Mevlana Cad. 1012/2 Sk. No:16 D:8
-                  </p>
-                </div>
-              </div>
+            <div className="aspect-square sm:aspect-[4/3] lg:aspect-square rounded-2xl overflow-hidden shadow-sm relative">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d754.9053354330372!2d29.440899269661337!3d40.814314013201965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb20c0a3fbb3e5%3A0x55033b92f75a7689!2sMevlana%20Cd.%20%26%201012%2F2.%20Sk.%2C%20Arap%C3%A7e%C5%9Fme%2C%2041400%20Gebze%2FKocaeli!5e0!3m2!1str!2str!4v1778250814753!5m2!1str!2str"
+                width="100%"
+                height="100%"
+                style={{ border: 0, position: "absolute", inset: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Miss Butik Pasta Konumu"
+                aria-label="Arapçeşme Mah. Mevlana Cad. 1012/2 Sk. No:7 Kat:4 D:8, Kocaeli/Gebze"
+                allowFullScreen
+              />
             </div>
           </motion.div>
         </div>

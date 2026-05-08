@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useIsMobile } from "@/lib/hooks";
 import { fadeInUp, fadeInLeft, fadeInRight, scaleIn } from "@/lib/animations";
@@ -19,15 +20,14 @@ export default function About() {
             {...fadeInLeft(isMobile)}
             className="relative"
           >
-            <div className="aspect-square sm:aspect-[4/5] rounded-2xl bg-gradient-to-br from-pink/20 via-light-pink to-gold/30 overflow-hidden">
-              <div className="w-full h-full flex items-center justify-center">
-                <div className="text-center p-8">
-                  <span className="text-6xl sm:text-8xl">🎂</span>
-                  <p className="mt-4 text-dark/40 font-inter text-sm">
-                    Pastane görseli eklenecek
-                  </p>
-                </div>
-              </div>
+            <div className="aspect-square sm:aspect-[4/5] rounded-2xl overflow-hidden relative">
+              <Image
+                src="/images/pink-lotus-cake.webp"
+                alt="Pembe Lotus Pastası"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+              />
             </div>
             <div className="absolute -bottom-4 -right-4 w-24 h-24 sm:w-32 sm:h-32 bg-gold/20 rounded-full blur-xl" />
             <div className="absolute -top-4 -left-4 w-20 h-20 sm:w-24 sm:h-24 bg-pink/20 rounded-full blur-xl" />
