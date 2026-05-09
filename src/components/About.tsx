@@ -51,7 +51,6 @@ export default function About() {
               {[
                 { icon: "🌾", title: "Doğal Malzeme", desc: "Katkısız, taze içerikler" },
                 { icon: "🎨", title: "Özel Tasarım", desc: "Hayalinizdeki pasta" },
-                { icon: "🚗", title: "Teslimat", desc: "Gebze içi kapıda teslim" },
                 { icon: "💝", title: "Sevgiyle", desc: "El yapımı üretim" },
               ].map((item, i) => (
                 <div

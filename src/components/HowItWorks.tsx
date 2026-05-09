@@ -13,13 +13,6 @@ const steps = [
     description:
       "En taze ve kaliteli malzemelerle, el emeğiyle pastanızı özenle hazırlıyoruz.",
   },
-  {
-    number: "03",
-    icon: "🚗",
-    title: "Teslimat",
-    description:
-      "Gebze içinde kapıda teslim veya dükkanımızdan alın. Özel gününüzde yanınızdayız.",
-  },
 ];
 
 export default function HowItWorks() {
@@ -38,11 +31,11 @@ export default function HowItWorks() {
             Nasıl <span className="text-pink">Sipariş Verilir?</span>
           </h2>
           <p className="mt-4 text-dark/75 font-inter text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            Sadece 3 kolay adımda hayalinizdeki pastaya kavuşun.
+            Sadece 2 kolay adımda hayalinizdeki pastaya kavuşun.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-2xl mx-auto">
           {steps.map((step, index) => (
             <div key={step.number} className="relative" style={{ animationDelay: `${index * 0.15}s` }}>
               {index < steps.length - 1 && (
