@@ -12,8 +12,8 @@ export default function About() {
           <div className="relative animate-fade-in-left">
             <div className="aspect-square sm:aspect-[4/5] rounded-2xl overflow-hidden relative">
               <Image
-                src="/images/pink-lotus-cake.webp"
-                alt="Pembe Lotus Pastası"
+                src="/images/about-us.webp"
+                alt="Miss Butik Pasta"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
