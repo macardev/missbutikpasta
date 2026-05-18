@@ -1,12 +1,6 @@
-# robots.txt
-# https://missbutikpasta.com
-
 User-agent: *
 Allow: /
-Disallow: /_next/
-Disallow: /_next/static/
-Disallow: /_next/image/
-
-Crawl-delay: 10
+Allow: /_next/static/
+Allow: /_next/image/
 
 Sitemap: https://missbutikpasta.com/sitemap.xml
