@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -150,7 +152,9 @@ const faqs = [
 
 export default function FAQPage() {
   return (
-    <main className="min-h-screen pt-24 sm:pt-28 pb-16 sm:pb-24 bg-cream">
+    <>
+      <Navbar />
+      <main className="min-h-screen pt-24 sm:pt-28 pb-16 sm:pb-24 bg-cream">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -206,5 +210,7 @@ export default function FAQPage() {
         </div>
       </div>
     </main>
+      <Footer />
+    </>
   );
 }
