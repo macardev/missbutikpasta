@@ -118,6 +118,24 @@ const localBusinessSchema = {
   sameAs: ["https://www.instagram.com/miss.butikpasta"],
 };
 
+const imageGallerySchema = {
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "Miss Butik Pasta Özel Tasarım Pasta Galerisi",
+  "description": "Gebze özel tasarım pasta, doğum günü pastası ve butik tatlı galerisi - Miss Butik Pasta",
+  "url": "https://missbutikpasta.com/#gallery",
+  "image": [
+    "https://missbutikpasta.com/images/ozel-tasarim-pasta1.webp",
+    "https://missbutikpasta.com/images/ozel-tasarim-pasta2.webp",
+    "https://missbutikpasta.com/images/ozel-tasarim-pasta3.webp",
+    "https://missbutikpasta.com/images/ozel-tasarim-pasta4.webp",
+    "https://missbutikpasta.com/images/ozel-tasarim-pasta5.webp",
+    "https://missbutikpasta.com/images/ozel-tasarim-pasta6.webp",
+    "https://missbutikpasta.com/images/ozel-tasarim-pasta7.webp",
+    "https://missbutikpasta.com/images/ozel-tasarim-pasta8.webp",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -146,6 +164,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(imageGallerySchema) }}
         />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>

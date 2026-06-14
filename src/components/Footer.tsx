@@ -5,6 +5,7 @@ const footerLinks = [
   { label: "Hakkımızda", href: "#about" },
   { label: "Ürünler", href: "#gallery" },
   { label: "Nasıl Çalışır", href: "#how-it-works" },
+  { label: "SSS", href: "/sikca-sorulan-sorular" },
   { label: "İletişim", href: "#contact" },
 ];
 

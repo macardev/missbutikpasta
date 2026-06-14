@@ -21,6 +21,14 @@ const slides = [
   { id: 13, alt: "Öncesi Sonrası Pastası", image: "/images/before-after-cake.webp" },
   { id: 14, alt: "Pixel Art Pasta", image: "/images/pixel-art-cake.webp" },
   { id: 15, alt: "Çilekli Pasta", image: "/images/strawberry-cake.webp" },
+  { id: 16, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 1", image: "/images/ozel-tasarim-pasta1.webp" },
+  { id: 17, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 2", image: "/images/ozel-tasarim-pasta2.webp" },
+  { id: 18, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 3", image: "/images/ozel-tasarim-pasta3.webp" },
+  { id: 19, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 4", image: "/images/ozel-tasarim-pasta4.webp" },
+  { id: 20, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 5", image: "/images/ozel-tasarim-pasta5.webp" },
+  { id: 21, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 6", image: "/images/ozel-tasarim-pasta6.webp" },
+  { id: 22, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 7", image: "/images/ozel-tasarim-pasta7.webp" },
+  { id: 23, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 8", image: "/images/ozel-tasarim-pasta8.webp" },
 ];
 
 const slideVariants = {
