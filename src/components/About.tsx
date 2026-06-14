@@ -36,14 +36,17 @@ export default function About() {
 
             <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
               <p className="text-dark/75 font-inter text-base sm:text-lg leading-relaxed">
-                Miss Butik Pasta olarak Gebze&apos;nin kalbinde, her pastayı bir
-                sanat eseri olarak tasarlıyoruz. Aile tariflerinden ilham alarak,
-                en kaliteli malzemelerle üretim yapıyoruz.
+                Miss Butik Pasta, Gebze Arapçeşme&apos;de 2024&apos;ten bu yana
+                hizmet veren butik pasta atölyesidir. 2 yıldır her pastayı bir
+                sanat eseri olarak tasarlıyor, en kaliteli malzemelerle
+                üretim yapıyoruz. Bugüne kadar 200&apos;den fazla özel pasta
+                hazırladık.
               </p>
               <p className="text-dark/75 font-inter text-base sm:text-lg leading-relaxed">
-                Her sipariş özel bir hikaye. Doğum günü, nişan, düğün ya da
-                sıradan bir gün... Her anı tatlandırmak için buradayız.
-                Kişisel tasarımlarınız hayata geçiyoruz.
+                Her sipariş özel bir hikaye. Doğum günü, nişan, düğün, yıl
+                dönümü ya da sıradan bir gün... Her anı tatlandırmak için
+                buradayız. Hayal ettiğiniz tasarımı sıfırdan, sadece size
+                özel olarak hazırlıyoruz.
               </p>
             </div>
 

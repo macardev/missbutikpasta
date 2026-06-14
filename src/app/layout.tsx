@@ -84,7 +84,8 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "Bakery",
   name: "Miss Butik Pasta",
-  description: "Gebze'de butik pasta, doğum günü pastası, nişan pastası ve özel tasarım tatlılar. El yapımı, butik üretim.",
+  description: "Gebze'de butik pasta, doğum günü pastası, nişan pastası, düğün pastası ve özel tasarım pastalar. 2 yıldır hizmet veriyoruz, 200+ özel pasta ürettik. El yapımı, butik üretim.",
+  foundingDate: "2024",
   image: "https://missbutikpasta.com/images/og-image.webp",
   url: "https://missbutikpasta.com",
   telephone: "+905345687783",
@@ -115,6 +116,14 @@ const localBusinessSchema = {
     "@type": "City",
     name: "Gebze",
   },
+  makesOffer: [
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Doğum Günü Pastası" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Nişan Pastası" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Düğün Pastası" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Özel Tasarım Pasta" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Yıl Dönümü Pastası" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Özel Gün Pastası" } },
+  ],
   sameAs: ["https://www.instagram.com/miss.butikpasta"],
 };
 

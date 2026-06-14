@@ -32,8 +32,10 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 text-base sm:text-lg md:text-xl text-dark/75 font-inter max-w-2xl mx-auto leading-relaxed">
-            El emeği, butik üretim pastalarımızla özel günlerinizi unutulmaz
-            kılıyoruz. Her pastayı sevgiyle, özenle tasarlıyoruz.
+            Miss Butik Pasta, Gebze Arapçeşme&apos;de butik pasta ve özel tasarım
+            pasta atölyesidir. Doğum günü, nişan, düğün ve her türlü özel gün
+            için el yapımı, kişiye özel pastalar üretiyoruz. 2 yıldır hizmet
+            veriyor, 200&apos;den fazla özel pasta tasarladık.
           </p>
 
           <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -60,8 +62,8 @@ export default function Hero() {
         >
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 text-dark/60">
             <div className="text-center">
-              <p className="font-playfair text-2xl sm:text-3xl font-bold text-pink">100+</p>
-              <p className="text-xs sm:text-sm font-inter mt-1">Mutlu Müşteri</p>
+              <p className="font-playfair text-2xl sm:text-3xl font-bold text-pink">200+</p>
+              <p className="text-xs sm:text-sm font-inter mt-1">Özel Pasta</p>
             </div>
             <div className="w-px h-10 bg-dark/10 hidden sm:block" />
             <div className="text-center">
