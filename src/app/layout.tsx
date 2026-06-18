@@ -145,6 +145,156 @@ const imageGallerySchema = {
   ],
 };
 
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "AggregateRating",
+  "itemReviewed": {
+    "@type": "Bakery",
+    "name": "Miss Butik Pasta",
+  },
+  "ratingValue": "5",
+  "bestRating": "5",
+  "ratingCount": "3",
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Ayşe Y." },
+      "reviewBody":
+        "Doğum günü pastamızı buradan sipariş ettik, hem görseli hem de lezzeti harikaydı! Kesinlikle tavsiye ediyorum.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Mehmet K." },
+      "reviewBody":
+        "Nişan pastamız tam hayal ettiğimiz gibi oldu. İlgili ekip ve mükemmel sonuç. Teşekkürler Miss Butik Pasta!",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Zeynep A." },
+      "reviewBody":
+        "Çikolatalı pastaları efsane! Her seferinde sipariş veriyorum ve her seferinde aynı kalitede. Gebze'de en iyisi!",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+    },
+  ],
+};
+
+const productListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Miss Butik Pasta Hizmetleri",
+  "description": "Miss Butik Pasta'nın özel tasarım pasta ve tatlı hizmetleri.",
+  "url": "https://missbutikpasta.com",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Doğum Günü Pastası",
+        "description":
+          "Kişiye özel temalı doğum günü pastaları. Taze malzemelerle el yapımı, butik üretim.",
+        "category": "Pasta",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Nişan Pastası",
+        "description": "Özel nişan törenleri için zarif tasarım pastalar.",
+        "category": "Pasta",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Düğün Pastası",
+        "description": "Katlı ve figürlü düğün pastaları. Hayalinizdeki konsepte uygun tasarımlar.",
+        "category": "Pasta",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Özel Tasarım Pasta",
+        "description": "Tamamen size özel, sıfırdan hazırlanan butik pastalar.",
+        "category": "Pasta",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Yıl Dönümü Pastası",
+        "description": "Kutlamalar için özel pasta tasarımları.",
+        "category": "Pasta",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "Product",
+        "name": "Özel Gün Pastası",
+        "description": "Her türlü özel gün için kişiye özel tasarım pastalar.",
+        "category": "Pasta",
+      },
+    },
+  ],
+};
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Özel Tasarım Pasta Nasıl Sipariş Edilir?",
+  "description":
+    "Miss Butik Pasta'dan özel tasarım pasta siparişi vermek için 2 basit adım.",
+  "totalTime": "P2D",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Tasarım",
+      "text":
+        "WhatsApp üzerinden bizimle iletişime geçin. Hayalinizdeki pastayı anlatın, birlikte tasarlayalım.",
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Üretim",
+      "text":
+        "En taze ve kaliteli malzemelerle, el emeğiyle pastanızı özenle hazırlıyoruz.",
+    },
+  ],
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Ana Sayfa",
+      "item": "https://missbutikpasta.com",
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sıkça Sorulan Sorular",
+      "item": "https://missbutikpasta.com/sikca-sorulan-sorular",
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -177,6 +327,22 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(imageGallerySchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(productListSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>

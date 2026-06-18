@@ -1,7 +1,7 @@
 # Miss Butik Pasta
 
 > Gebze, Kocaeli'de butik pasta ve özel tasarım pasta atölyesi.
-> 2 yıldır hizmet veriyoruz, 200+ özel pasta üretildi.
+> 2024'ten bu yana hizmet veriyoruz, 200+ özel pasta üretildi.
 
 ## Hizmetler
 
@@ -12,23 +12,36 @@
 - **Yıl Dönümü Pastası** — Kutlamalar için özel pasta tasarımları.
 - **Özel Gün Pastaları** — Her türlü özel gün için kişiye özel tasarım pastalar.
 
-## İletişim
+## Nasıl Sipariş Verilir
 
-- **Adres:** Arapçeşme Mah. Mevlana Cad. 1012/2 Sk. No:7 Kat:4 D:8, Gebze/Kocaeli
-- **WhatsApp:** 0534 568 77 83
-- **Instagram:** https://www.instagram.com/miss.butikpasta
-- **Web Sitesi:** https://missbutikpasta.com
-- **Google Business Profile:** Mevcut
+1. **Tasarım** — WhatsApp üzerinden bizimle iletişime geçin. Hayalinizdeki pastayı anlatın, birlikte tasarlayalım.
+2. **Üretim** — En taze ve kaliteli malzemelerle, el emeğiyle pastanızı özenle hazırlıyoruz.
+
+## Malzemeler
+
+- Taze yumurta, süt, tereyağı, birinci sınıf un
+- Belçika çikolatası (çikolatalı pastalarda)
+- Mevsim meyveleri (çilek, frambuaz, muz)
+- Doğal içerikler, hazır karışım kullanılmaz
+- Gıda güvenliği standartlarına uygun şeker hamuru
 
 ## Öne Çıkan Sayfalar
 
 - Ana Sayfa: https://missbutikpasta.com
 - Galeri: https://missbutikpasta.com/#gallery
 - Sıkça Sorulan Sorular: https://missbutikpasta.com/sikca-sorulan-sorular
+- Doğum Günü Pastası Fikirleri: https://missbutikpasta.com/blog/dogum-gunu-pastasi-fikirleri
 
-## Malzemeler
+## İletişim
 
-- Taze yumurta, süt, tereyağı, birinci sınıf un
-- Belçika çikolatası
-- Mevsim meyveleri (çilek, frambuaz, muz)
-- Doğal içerikler, hazır karışım kullanılmaz
+- **Adres:** Arapçeşme Mah. Mevlana Cad. 1012/2 Sk. No:7 Kat:4 D:8, Gebze/Kocaeli
+- **Telefon:** 0534 568 77 83
+- **WhatsApp:** https://wa.me/905345687783
+- **Instagram:** https://www.instagram.com/miss.butikpasta
+- **Web Sitesi:** https://missbutikpasta.com
+- **Google Business Profile:** Mevcut
+
+## Sayfa Bazında Metadata
+
+- **Ana Sayfa:** Gebze butik pasta, özel tasarım pasta, Gebze doğum günü pastası
+- **SSS:** Butik pasta fiyatları, sipariş, malzemeler, teslimat hakkında sık sorulan sorular

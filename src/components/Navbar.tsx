@@ -5,11 +5,12 @@ import Link from "next/link";
 import { WHATSAPP_LINK } from "@/lib/constants";
 
 const navLinks = [
-  { label: "Hakkımızda", href: "#about" },
-  { label: "Ürünler", href: "#gallery" },
-  { label: "Nasıl Çalışır", href: "#how-it-works" },
+  { label: "Hakkımızda", href: "/#about" },
+  { label: "Ürünler", href: "/#gallery" },
+  { label: "Nasıl Çalışır", href: "/#how-it-works" },
+  { label: "Blog", href: "/blog" },
   { label: "SSS", href: "/sikca-sorulan-sorular" },
-  { label: "İletişim", href: "#contact" },
+  { label: "İletişim", href: "/#contact" },
 ];
 
 export default function Navbar() {
