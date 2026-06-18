@@ -40,6 +40,7 @@ const articleSchema = {
   "headline": "Özel Tasarım Pasta Nasıl Sipariş Edilir? Adım Adım Rehber",
   "description": "İlk kez özel tasarım pasta siparişi verecekler için kapsamlı rehber: tasarım seçimi, boyut belirleme, lezzet seçenekleri ve sipariş süreci.",
   "author": { "@type": "Organization", "name": "Miss Butik Pasta" },
+  "publisher": { "@type": "Organization", "name": "Miss Butik Pasta" },
   "datePublished": "2026-06-18",
   "dateModified": "2026-06-18",
   "image": "https://missbutikpasta.com/images/pink-detailed-cake.webp",

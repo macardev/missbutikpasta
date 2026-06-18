@@ -145,40 +145,7 @@ const imageGallerySchema = {
   ],
 };
 
-const reviewSchema = {
-  "@context": "https://schema.org",
-  "@type": "AggregateRating",
-  "itemReviewed": {
-    "@type": "Bakery",
-    "name": "Miss Butik Pasta",
-  },
-  "ratingValue": "5",
-  "bestRating": "5",
-  "ratingCount": "3",
-  "review": [
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Ayşe Y." },
-      "reviewBody":
-        "Doğum günü pastamızı buradan sipariş ettik, hem görseli hem de lezzeti harikaydı! Kesinlikle tavsiye ediyorum.",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    },
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Mehmet K." },
-      "reviewBody":
-        "Nişan pastamız tam hayal ettiğimiz gibi oldu. İlgili ekip ve mükemmel sonuç. Teşekkürler Miss Butik Pasta!",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    },
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Zeynep A." },
-      "reviewBody":
-        "Çikolatalı pastaları efsane! Her seferinde sipariş veriyorum ve her seferinde aynı kalitede. Gebze'de en iyisi!",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    },
-  ],
-};
+
 
 const productListSchema = {
   "@context": "https://schema.org",
@@ -191,61 +158,55 @@ const productListSchema = {
       "@type": "ListItem",
       "position": 1,
       "item": {
-        "@type": "Product",
+        "@type": "Service",
         "name": "Doğum Günü Pastası",
         "description":
           "Kişiye özel temalı doğum günü pastaları. Taze malzemelerle el yapımı, butik üretim.",
-        "category": "Pasta",
       },
     },
     {
       "@type": "ListItem",
       "position": 2,
       "item": {
-        "@type": "Product",
+        "@type": "Service",
         "name": "Nişan Pastası",
         "description": "Özel nişan törenleri için zarif tasarım pastalar.",
-        "category": "Pasta",
       },
     },
     {
       "@type": "ListItem",
       "position": 3,
       "item": {
-        "@type": "Product",
+        "@type": "Service",
         "name": "Düğün Pastası",
         "description": "Katlı ve figürlü düğün pastaları. Hayalinizdeki konsepte uygun tasarımlar.",
-        "category": "Pasta",
       },
     },
     {
       "@type": "ListItem",
       "position": 4,
       "item": {
-        "@type": "Product",
+        "@type": "Service",
         "name": "Özel Tasarım Pasta",
         "description": "Tamamen size özel, sıfırdan hazırlanan butik pastalar.",
-        "category": "Pasta",
       },
     },
     {
       "@type": "ListItem",
       "position": 5,
       "item": {
-        "@type": "Product",
+        "@type": "Service",
         "name": "Yıl Dönümü Pastası",
         "description": "Kutlamalar için özel pasta tasarımları.",
-        "category": "Pasta",
       },
     },
     {
       "@type": "ListItem",
       "position": 6,
       "item": {
-        "@type": "Product",
+        "@type": "Service",
         "name": "Özel Gün Pastası",
         "description": "Her türlü özel gün için kişiye özel tasarım pastalar.",
-        "category": "Pasta",
       },
     },
   ],
@@ -327,10 +288,6 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(imageGallerySchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
         />
         <script
           type="application/ld+json"
