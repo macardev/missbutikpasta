@@ -92,7 +92,7 @@ const localBusinessSchema = {
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Arapçeşme Mah. Mevlana Cad. 1012/2 Sk. No:7 Kat:4 D:8",
+    streetAddress: "Arapçeşme Mah. Namık Kemal Caddesi No 102 Kat 3",
     addressLocality: "Gebze",
     addressRegion: "Kocaeli",
     postalCode: "41400",
@@ -100,15 +100,15 @@ const localBusinessSchema = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 40.7869,
-    longitude: 29.4244,
+    latitude: 40.81313,
+    longitude: 29.44240,
   },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "09:00",
-      closes: "19:00",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "00:00",
+      closes: "23:59",
     },
   ],
   servesCuisine: ["Turkish", "Desserts", "Bakery"],

@@ -73,14 +73,14 @@ export default function Contact() {
           <div className="animate-fade-in-right">
             <div className="aspect-square sm:aspect-[4/3] lg:aspect-square rounded-2xl overflow-hidden shadow-sm relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d754.9053354330372!2d29.440899269661337!3d40.814314013201965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb20c0a3fbb3e5%3A0x55033b92f75a7689!2sMevlana%20Cd.%20%26%201012%2F2.%20Sk.%2C%20Arap%C3%A7e%C5%9Fme%2C%2041400%20Gebze%2FKocaeli!5e0!3m2!1str!2str!4v1778250814753!5m2!1str!2str"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2135.2328449471247!2d29.44240323990816!3d40.81312961787988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb20c0e71133c7%3A0x5964727b4b2eb1c3!2sA.%C3%A7e%C5%9Fme%20mah%2C%20Nam%C4%B1k%20Kemal%20Cd.%20No%3A102%20Kat%3A3%2C%2041400%20Gebze%2FKocaeli!5e0!3m2!1str!2str!4v1782146633017!5m2!1str!2str"
                 width="100%"
                 height="100%"
                 style={{ border: 0, position: "absolute", inset: 0 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Miss Butik Pasta Konumu"
-                aria-label="Arapçeşme Mah. Mevlana Cad. 1012/2 Sk. No:7 Kat:4 D:8, Kocaeli/Gebze"
+                aria-label="Arapçeşme Mah. Namık Kemal Caddesi No 102 Kat 3 Gebze/Kocaeli"
                 allowFullScreen
               />
             </div>

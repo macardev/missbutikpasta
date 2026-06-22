@@ -102,7 +102,7 @@ export default function CerezPolitikasiPage() {
             <div className="mt-4 p-4 bg-white rounded-xl border border-dark/5">
               <p className="font-semibold text-dark">Miss Butik Pasta</p>
               <p className="mt-1">WhatsApp: 0534 568 77 83</p>
-              <p className="mt-1">Adres: Arapçeşme Mah. Mevlana Cad. 1012/2 Sk. No:7 Kat:4 D:8, Gebze/Kocaeli</p>
+              <p className="mt-1">Adres: Arapçeşme Mah. Namık Kemal Caddesi No 102 Kat 3, Gebze/Kocaeli</p>
             </div>
           </section>
         </div>

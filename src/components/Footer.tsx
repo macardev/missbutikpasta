@@ -50,9 +50,8 @@ export default function Footer() {
           <div>
             <h3 className="font-playfair font-semibold text-cream text-base mb-4">İletişim</h3>
             <div className="space-y-2 font-inter text-sm">
-              <p>Arapçeşme Mah. Mevlana Cad.</p>
-              <p>1012/2 Sk. No:7 Kat:4 D:8</p>
-              <p>Kocaeli/Gebze</p>
+              <p>Arapçeşme Mah. Namık Kemal Cad. No:102 Kat:3</p>
+              <p>Gebze/Kocaeli</p>
               <a href="tel:+905345687783" className="hover:text-pink transition-colors block mt-2">
                 0534 568 77 83
               </a>
