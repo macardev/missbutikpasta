@@ -41,6 +41,15 @@ const posts = [
     date: "18 Haziran 2026",
     readTime: "5 dk",
   },
+  {
+    slug: "butik-pasta-ile-pastane-arasindaki-farklar",
+    title: "Butik Pasta ile Pastane Arasındaki Farklar: Hangisi Sizin İçin Doğru?",
+    excerpt:
+      "Butik pasta ile klasik pastane arasındaki temel farklar: üretim süreci, malzeme kalitesi, tasarım özgürlüğü, fiyatlandırma ve daha fazlası.",
+    image: "/images/pink-detailed-cake.webp",
+    date: "23 Haziran 2026",
+    readTime: "8 dk",
+  },
 ];
 
 export default function BlogPage() {
