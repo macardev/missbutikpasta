@@ -46,7 +46,7 @@ const posts = [
     title: "Butik Pasta ile Pastane Arasındaki Farklar: Hangisi Sizin İçin Doğru?",
     excerpt:
       "Butik pasta ile klasik pastane arasındaki temel farklar: üretim süreci, malzeme kalitesi, tasarım özgürlüğü, fiyatlandırma ve daha fazlası.",
-    image: "/images/pink-detailed-cake.webp",
+    image: "/images/ozel-tasarim-pasta2.webp",
     date: "23 Haziran 2026",
     readTime: "8 dk",
   },

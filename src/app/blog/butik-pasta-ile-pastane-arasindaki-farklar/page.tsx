@@ -59,7 +59,7 @@ const articleSchema = {
   "publisher": { "@type": "Organization", "name": "Miss Butik Pasta" },
   "datePublished": "2026-06-23",
   "dateModified": "2026-06-23",
-  "image": "https://missbutikpasta.com/images/pink-detailed-cake.webp",
+  "image": "https://missbutikpasta.com/images/ozel-tasarim-pasta2.webp",
 };
 
 export const metadata: Metadata = {
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     title: "Butik Pasta ile Pastane Arasındaki Farklar",
     description:
       "Butik pasta ile klasik pastane arasındaki temel farklar. Hangisi sizin için doğru?",
-    images: [{ url: "https://missbutikpasta.com/images/pink-detailed-cake.webp", width: 1200, height: 630, alt: "Butik Pasta" }],
+    images: [{ url: "https://missbutikpasta.com/images/ozel-tasarim-pasta2.webp", width: 1200, height: 630, alt: "Butik Pasta" }],
   },
 };
 
@@ -209,7 +209,7 @@ export default function ButikPastaFarkPage() {
 
           <div className="aspect-video rounded-2xl overflow-hidden mb-10 relative bg-cream">
             <Image
-              src="/images/pink-detailed-cake.webp"
+              src="/images/ozel-tasarim-pasta2.webp"
               alt="Butik Pasta"
               fill
               sizes="(max-width: 768px) 100vw, 768px"
