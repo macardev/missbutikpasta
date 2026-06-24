@@ -12,7 +12,7 @@ const faqSchema = {
       "name": "Butik pasta siparişini kaç gün öncesinden vermem gerekir?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tasarımın karmaşıklığına göre değişmekle birlikte, en az 5-7 gün öncesinden sipariş vermenizi öneririz. Düğün veya nişan gibi büyük organizasyonlar için 2-4 hafta öncesinden irtibata geçmek en iyi sonucu almanızı sağlar.",
+        "text": "Tasarımın karmaşıklığına göre değişmekle birlikte, en az 3-4 gün öncesinden sipariş vermenizi öneririz. Düğün veya nişan gibi büyük organizasyonlar için 1-2 hafta öncesinden irtibata geçmek en iyi sonucu almanızı sağlar.",
       },
     },
     {
@@ -74,6 +74,12 @@ export const metadata: Metadata = {
     "kişiye özel pasta",
     "Gebze butik pasta",
     "butik pasta fiyat",
+    "baby shower pastası",
+    "gelin pastası",
+    "evlilik teklifi pastası",
+    "gelin damat bohçası",
+    "sevgililer günü pastası",
+    "cinsiyet açıklama pastası",
   ],
   openGraph: {
     title: "Butik Pasta ile Pastane Arasındaki Farklar",
@@ -149,7 +155,7 @@ const comparisonRows = [
   },
   {
     criterion: "Özel Günler İçin Uygunluk",
-    butik: "Doğum günü, nişan, düğün, kurumsal etkinlik",
+    butik: "Doğum günü, nişan, düğün, Baby Shower, evlilik teklifi, Sevgililer Günü ve daha fazlası",
     pastane: "Standart kutlamalar için yeterli",
     butikIcon: "check",
     pastaneIcon: "partial",
@@ -232,10 +238,11 @@ export default function ButikPastaFarkPage() {
           <section className="mt-10">
             <p className="font-inter text-dark/80 text-base sm:text-lg leading-relaxed">
               &ldquo;Butik pasta&rdquo; ve &ldquo;pastane&rdquo; kelimeleri çoğu zaman birbirinin
-              yerine kullanılsa da aslında birbirinden çok farklı iki üretim ve hizmet anlayışını
-              temsil eder. Doğum günü pastanızı, nişan pastanızı ya da düğün pastanızı nereden
-              sipariş edeceğinize karar verirken bu farkları bilmek, hem bütçenizi hem de
-              beklentilerinizi doğru yönetmenizi sağlar.
+               yerine kullanılsa da aslında birbirinden çok farklı iki üretim ve hizmet anlayışını
+               temsil eder. Doğum günü pastanızı, Baby Shower pastanızı, nişan pastanızı, evlilik
+               teklifi pastanızı, Sevgililer Günü pastanızı ya da düğün pastanızı nereden sipariş
+               edeceğinize karar verirken bu farkları bilmek, hem bütçenizi hem de beklentilerinizi
+               doğru yönetmenizi sağlar.
             </p>
             <p className="font-inter text-dark/80 text-base sm:text-lg leading-relaxed mt-4">
               Bu yazıda butik pasta atölyesi ile geleneksel pastane arasındaki farkları tüm
@@ -375,9 +382,9 @@ export default function ButikPastaFarkPage() {
             <p className="font-inter text-dark/80 text-base sm:text-lg leading-relaxed mt-4">
               Buna karşılık, bir <strong>butik pasta</strong> siparişi önceden planlamayı
               gerektirir. Neden? Çünkü tasarımın netleşmesi, malzemelerin tedarik edilmesi ve el
-              işçiliğinin tamamlanması zaman alır. Bu süre pastanın karmaşıklığına göre birkaç
-              günden bir haftaya kadar uzayabilir. Özel bir etkinlik planlıyorsanız, siparişinizi
-              en az 5-7 gün öncesinden vermeniz önerilir.
+              işçiliğinin tamamlanması zaman alır. Bu süre pastanın karmaşıklığına göre
+              genellikle 3-4 gün içinde tamamlanır. Özel bir etkinlik planlıyorsanız, siparişinizi
+              en az 3-4 gün öncesinden vermeniz önerilir.
             </p>
             <p className="font-inter text-dark/80 text-base sm:text-lg leading-relaxed mt-4">
               Bu, bir dezavantaj gibi görünse de aslında tasarım kalitesinin garantisidir.
@@ -438,9 +445,14 @@ export default function ButikPastaFarkPage() {
                   Butik Pasta Tercih Edin
                 </h3>
                 <ul className="space-y-2 font-inter text-dark/75 text-sm sm:text-base">
-                  <li className="flex gap-2"><span className="text-pink shrink-0">&#10003;</span> Anlamlı yaş dönümleri (1., 18., 30., 50. yaş)</li>
+                  <li className="flex gap-2"><span className="text-pink shrink-0">&#10003;</span> Doğum günü (yaş dönümü) pastaları</li>
                   <li className="flex gap-2"><span className="text-pink shrink-0">&#10003;</span> Nişan ve düğün törenleri</li>
-                  <li className="flex gap-2"><span className="text-pink shrink-0">&#10003;</span> Bebek duşu ve cinsiyet açıklama partileri</li>
+                  <li className="flex gap-2"><span className="text-pink shrink-0">&#10003;</span> Baby Shower (Bebek Duşu) Pastası</li>
+                  <li className="flex gap-2"><span className="text-pink shrink-0">&#10003;</span> Cinsiyet Açıklama Partileri</li>
+                  <li className="flex gap-2"><span className="text-pink shrink-0">&#10003;</span> Gelin Pastası / Bride Cake</li>
+                  <li className="flex gap-2"><span className="text-pink shrink-0">&#10003;</span> Evlilik Teklifi Pastası</li>
+                  <li className="flex gap-2"><span className="text-pink shrink-0">&#10003;</span> Gelin, Damat Bohçası</li>
+                  <li className="flex gap-2"><span className="text-pink shrink-0">&#10003;</span> Sevgililer Günü Pastaları</li>
                   <li className="flex gap-2"><span className="text-pink shrink-0">&#10003;</span> Kurumsal etkinlikler, ödül törenleri</li>
                   <li className="flex gap-2"><span className="text-pink shrink-0">&#10003;</span> Mezuniyet partileri</li>
                   <li className="flex gap-2"><span className="text-pink shrink-0">&#10003;</span> Yıl dönümlerinde kişisel dokunuşlar</li>
@@ -493,7 +505,7 @@ export default function ButikPastaFarkPage() {
             </h2>
             <div className="space-y-3">
               {[
-                { q: "Butik pasta siparişini kaç gün öncesinden vermem gerekir?", a: "Tasarımın karmaşıklığına göre değişmekle birlikte, en az 5-7 gün öncesinden sipariş vermenizi öneririz. Düğün veya nişan gibi büyük organizasyonlar için 2-4 hafta öncesinden irtibata geçmek, en iyi sonucu almanızı sağlar." },
+                { q: "Butik pasta siparişini kaç gün öncesinden vermem gerekir?", a: "Tasarımın karmaşıklığına göre değişmekle birlikte, en az 3-4 gün öncesinden sipariş vermenizi öneririz. Düğün veya nişan gibi büyük organizasyonlar için 1-2 hafta öncesinden irtibata geçmek, en iyi sonucu almanızı sağlar." },
                 { q: "Butik pastalar gerçekten lezzetli mi, yoksa sadece görsel mi?", a: "Bu en çok sorulan sorulardan biridir. İyi bir butik pasta atölyesinde görsellik ve lezzet aynı önemi taşır. Taze, kaliteli malzemelerin kullanılması, pastanın hem gözlere hem de damağa hitap etmesini sağlar. Miss Butik Pasta'da görselliğin yanı sıra lezzet hiçbir zaman ikinci plana atılmaz." },
                 { q: "Farklı şehirlerden sipariş verebilir miyim?", a: "Gebze ve çevresindeki ilçelere teslimat yapılmaktadır. Farklı lokasyonlar için WhatsApp üzerinden bizimle iletişime geçerek seçenekleri değerlendirebilirsiniz." },
                 { q: "Tasarım pasta klasik pastaneden kaç kat daha pahalı?", a: "Tasarımın detayına ve pastanın büyüklüğüne göre değişir. Genel olarak kişiselleştirme arttıkça el işçiliği de artar ve bu fiyata yansır. Tam bir fiyat bilgisi için sipariş detaylarınızı paylaşmanız yeterlidir." },
@@ -538,7 +550,7 @@ export default function ButikPastaFarkPage() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-green-600 shrink-0">&#10003;</span>
-                  <span>Sipariş için en az 5-7 gününüz var mı?</span>
+                   <span>Sipariş için en az 3-4 gününüz var mı?</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-green-600 shrink-0">&#10003;</span>
@@ -569,8 +581,9 @@ export default function ButikPastaFarkPage() {
               hayallerindeki pastayı gerçeğe dönüştürüyoruz.
             </p>
             <p className="font-inter text-dark/80 text-base sm:text-lg leading-relaxed mt-4">
-              Doğum günü pastası, nişan pastası, düğün pastası, bebek duşu pastası veya kurumsal
-              etkinlik pastası arıyorsanız; ister tek katlı sade bir tasarım olsun, ister çok katlı
+              Doğum günü pastası, Baby Shower pastası, nişan pastası, düğün pastası, gelin
+              pastası, evlilik teklifi pastası, Gelin Damat Bohçası, Sevgililer Günü pastası veya
+              kurumsal etkinlik pastası arıyorsanız; ister tek katlı sade bir tasarım olsun, ister çok katlı
               görkemli bir şaheser &mdash; her boyut ve karmaşıklık düzeyinde hizmet veriyoruz.
             </p>
             <p className="font-inter text-dark/80 text-base sm:text-lg leading-relaxed mt-4">

@@ -33,9 +33,10 @@ export default function Hero() {
 
           <p className="mt-6 text-base sm:text-lg md:text-xl text-dark/75 font-inter max-w-2xl mx-auto leading-relaxed">
             Miss Butik Pasta, Gebze Arapçeşme&apos;de butik pasta ve özel tasarım
-            pasta atölyesidir. Doğum günü, nişan, düğün ve her türlü özel gün
-            için el yapımı, kişiye özel pastalar üretiyoruz. 2 yıldır hizmet
-            veriyor, 200&apos;den fazla özel pasta tasarladık.
+             pasta atölyesidir. Doğum günü, Baby Shower, nişan, düğün,
+             Sevgililer Günü ve her türlü özel gün için el yapımı, kişiye özel
+             pastalar üretiyoruz. 2 yıldır hizmet veriyor, 200&apos;den fazla özel
+             pasta tasarladık.
           </p>
 
           <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">

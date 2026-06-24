@@ -20,7 +20,7 @@ const faqSchema = {
       "name": "Özel tasarım pasta siparişi ne kadar önceden verilmeli?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Özel tasarım pastalar siparişe özel sıfırdan hazırlandığı için en az 2-3 gün önceden sipariş vermeniz önerilir. Karmaşık tasarımlar ve katlı pastalar için daha fazla süre gerekebilir.",
+        "text": "Özel tasarım pastalar siparişe özel sıfırdan hazırlandığı için en az 3-4 gün önceden sipariş vermeniz önerilir. Karmaşık tasarımlar ve katlı pastalar için daha fazla süre gerekebilir.",
       },
     },
     {
@@ -51,7 +51,7 @@ const howToSchema = {
   "@type": "HowTo",
   "name": "Özel Tasarım Pasta Nasıl Sipariş Edilir?",
   "description": "Miss Butik Pasta'dan özel tasarım pasta siparişi vermek için adım adım rehber.",
-  "totalTime": "P3D",
+  "totalTime": "P4D",
   "step": [
     {
       "@type": "HowToStep",

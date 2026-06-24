@@ -123,6 +123,12 @@ const localBusinessSchema = {
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Özel Tasarım Pasta" } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Yıl Dönümü Pastası" } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Özel Gün Pastası" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Baby Shower (Bebek Duşu) Pastası" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Cinsiyet Açıklama Pastası" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gelin Pastası / Bride Cake" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Evlilik Teklifi Pastası" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gelin, Damat Bohçası" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sevgililer Günü Pastası" } },
   ],
   sameAs: ["https://www.instagram.com/miss.butikpasta"],
 };
@@ -207,6 +213,60 @@ const productListSchema = {
         "@type": "Service",
         "name": "Özel Gün Pastası",
         "description": "Her türlü özel gün için kişiye özel tasarım pastalar.",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "Service",
+        "name": "Baby Shower (Bebek Duşu) Pastası",
+        "description": "Baby shower organizasyonları için özel tasarım pastalar.",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "Service",
+        "name": "Cinsiyet Açıklama Pastası",
+        "description": "Cinsiyet açıklama partileri için sürpriz tasarım pastalar.",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "Service",
+        "name": "Gelin Pastası / Bride Cake",
+        "description": "Gelin ve damat için özel tasarım pasta ve pastalar.",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@type": "Service",
+        "name": "Evlilik Teklifi Pastası",
+        "description": "Unutulmaz bir evlilik teklifi için romantik tasarım pastalar.",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@type": "Service",
+        "name": "Gelin, Damat Bohçası",
+        "description": "Gelin ve damat bohçası için özel hazırlanan pasta tasarımları.",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@type": "Service",
+        "name": "Sevgililer Günü Pastası",
+        "description": "Sevgililer Günü'ne özel romantik ve kişiye özel pasta tasarımları.",
       },
     },
   ],
