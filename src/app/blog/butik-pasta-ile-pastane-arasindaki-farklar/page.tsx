@@ -328,7 +328,7 @@ export default function ButikPastaFarkPage() {
             <p className="font-inter text-dark/80 text-base sm:text-lg leading-relaxed mt-4">
               <strong>Butik pasta</strong> anlayışında ise tasarım sınırsızdır. Çocuğunuzun en
               sevdiği çizgi film karakterini, evlenme teklifi anınızı sembolize eden detayları,
-              kurumsal logonuzu ya da kişisel bir anıyı pastaya yansıtmak mümkündür. Fondanla el
+              kurumsal logonuzu ya da kişisel bir anıyı pastaya yansıtmak mümkündür. Şeker hamuruyla el
               işçiliği yapılan figürler, akrilik baskılı plakalar, taze çiçek süslemeleri, metalik
               boyalar, ayna yüzeyler ve daha onlarca teknik butik pasta atölyelerinin araç
               kutusundadır.
@@ -410,7 +410,7 @@ export default function ButikPastaFarkPage() {
               <ul className="space-y-2 font-inter text-dark/75 text-sm sm:text-base">
                 <li className="flex gap-3">
                   <span className="text-pink shrink-0">&#10003;</span>
-                  <span><strong>El işçiliği:</strong> Fondandan şekillendirilen bir çiçek ya da figür, bazen saatlerce çalışma gerektirir.</span>
+                  <span><strong>El işçiliği:</strong> Şeker hamurundan şekillendirilen bir çiçek ya da figür, bazen saatlerce çalışma gerektirir.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-pink shrink-0">&#10003;</span>
