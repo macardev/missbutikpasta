@@ -1,8 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import CommentStrip from "@/components/CommentStrip";
 import dynamic from "next/dynamic";
 import ScrollProgress from "@/components/ScrollProgress";
+import { googleReviews } from "@/lib/reviews";
 
 const reviewSchema = {
   "@context": "https://schema.org",
@@ -66,10 +68,15 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <CommentStrip name={googleReviews[0].name} text={googleReviews[0].text} bgLight />
         <About />
+        <CommentStrip name={googleReviews[1].name} text={googleReviews[1].text} />
         <Gallery />
+        <CommentStrip name={googleReviews[2].name} text={googleReviews[2].text} bgLight />
         <HowItWorks />
+        <CommentStrip name={googleReviews[3].name} text={googleReviews[3].text} />
         <Testimonials />
+        <CommentStrip name={googleReviews[4].name} text={googleReviews[4].text} bgLight />
         <Contact />
       </main>
       <Footer />
