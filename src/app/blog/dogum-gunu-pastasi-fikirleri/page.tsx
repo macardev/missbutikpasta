@@ -68,7 +68,7 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Gebze'de Doğum Günü Pastası: 2026'nın En Popüler Tasarım Fikirleri",
   "description": "2026'da öne çıkan doğum günü pastası tasarımları, butik pasta trendleri ve Gebze'de özel tasarım pasta siparişi hakkında kapsamlı rehber.",
-  "author": { "@type": "Organization", "name": "Miss Butik Pasta" },
+  "author": { "@type": "Person", "name": "Emine Macar" },
   "publisher": { "@type": "Organization", "name": "Miss Butik Pasta" },
   "datePublished": "2026-06-18",
   "dateModified": "2026-06-18",

@@ -15,27 +15,27 @@ const reviewSchema = {
   },
   "ratingValue": "5",
   "bestRating": "5",
-  "ratingCount": "3",
+  "ratingCount": "5",
   "review": [
     {
       "@type": "Review",
-      "author": { "@type": "Person", "name": "Ayşe Y." },
+      "author": { "@type": "Person", "name": "Sıla Dönder" },
       "reviewBody":
-        "Doğum günü pastamızı buradan sipariş ettik, hem görseli hem de lezzeti harikaydı! Kesinlikle tavsiye ediyorum.",
+        "iyi ki sizden sipariş vermişim. Pasta beklediğimden bile daha güzel olmuştu. Hem görüntüsüyle hem lezzetiyle herkes bayıldı. Süreç boyunca ilginiz, samimiyetiniz ve emeğiniz gerçekten çok güzeldi.",
       "reviewRating": { "@type": "Rating", "ratingValue": "5" },
     },
     {
       "@type": "Review",
-      "author": { "@type": "Person", "name": "Mehmet K." },
+      "author": { "@type": "Person", "name": "Fatih Yılmaz" },
       "reviewBody":
-        "Nişan pastamız tam hayal ettiğimiz gibi oldu. İlgili ekip ve mükemmel sonuç. Teşekkürler Miss Butik Pasta!",
+        "İki ayrı kutlama için iki defa pasta sipariş verdik. İki pastayı da ailecek çok beğendik, teşekkür ederiz. Tasarım işçiliği kadar tadı da çok lezzetliydi.",
       "reviewRating": { "@type": "Rating", "ratingValue": "5" },
     },
     {
       "@type": "Review",
-      "author": { "@type": "Person", "name": "Zeynep A." },
+      "author": { "@type": "Person", "name": "Zeynep" },
       "reviewBody":
-        "Çikolatalı pastaları efsane! Her seferinde sipariş veriyorum ve her seferinde aynı kalitede. Gebze'de en iyisi!",
+        "Mükemmel, herkese tavsiye ederim. En az beş pasta yaptırdım hepsi de mükemmeldi",
       "reviewRating": { "@type": "Rating", "ratingValue": "5" },
     },
   ],

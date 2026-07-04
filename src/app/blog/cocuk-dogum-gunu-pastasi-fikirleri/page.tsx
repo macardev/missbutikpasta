@@ -39,7 +39,7 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Çocuk Doğum Günü Pastası Fikirleri: En Sevilen Tema ve Karakterler",
   "description": "Çocuğunuzun doğum günü için en özel pasta fikirleri. Hayvan figürleri, çizgi film karakterleri, spor temalı ve daha birçok yaratıcı tasarım.",
-  "author": { "@type": "Organization", "name": "Miss Butik Pasta" },
+  "author": { "@type": "Person", "name": "Emine Macar" },
   "publisher": { "@type": "Organization", "name": "Miss Butik Pasta" },
   "datePublished": "2026-06-18",
   "dateModified": "2026-06-18",

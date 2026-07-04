@@ -55,7 +55,7 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Butik Pasta ile Pastane Arasındaki Farklar: Hangisi Sizin İçin Doğru?",
   "description": "Butik pasta ile klasik pastane arasındaki temel farklar nelerdir? Tasarım pasta neden farklıdır? Üretim süreci, malzeme kalitesi, tasarım özgürlüğü ve fiyatlandırma karşılaştırması.",
-  "author": { "@type": "Organization", "name": "Miss Butik Pasta" },
+  "author": { "@type": "Person", "name": "Emine Macar" },
   "publisher": { "@type": "Organization", "name": "Miss Butik Pasta" },
   "datePublished": "2026-06-23",
   "dateModified": "2026-06-23",

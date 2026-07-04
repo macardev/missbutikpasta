@@ -1,20 +1,6 @@
-const testimonials = [
-  {
-    name: "Ayşe Y.",
-    text: "Doğum günü pastamızı buradan sipariş ettik, hem görseli hem de lezzeti harikaydı! Kesinlikle tavsiye ediyorum.",
-    rating: 5,
-  },
-  {
-    name: "Mehmet K.",
-    text: "Nişan pastamız tam hayal ettiğimiz gibi oldu. İlgili ekip ve mükemmel sonuç. Teşekkürler Miss Butik Pasta!",
-    rating: 5,
-  },
-  {
-    name: "Zeynep A.",
-    text: "Çikolatalı pastaları efsane! Her seferinde sipariş veriyorum ve her seferinde aynı kalitede. Gebze&apos;de en iyisi!",
-    rating: 5,
-  },
-];
+import { googleReviews } from "@/lib/reviews";
+
+const topReviews = [googleReviews[2], googleReviews[4], googleReviews[3]];
 
 function Stars({ count }: { count: number }) {
   return (
@@ -45,7 +31,7 @@ export default function Testimonials() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
-          {testimonials.map((t, i) => (
+          {topReviews.map((t, i) => (
             <div
               key={t.name}
               className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow animate-scale-in"

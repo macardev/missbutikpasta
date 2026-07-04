@@ -5,6 +5,7 @@ const footerLinks = [
   { label: "Hakkımızda", href: "/#about" },
   { label: "Ürünler", href: "/#gallery" },
   { label: "Nasıl Çalışır", href: "/#how-it-works" },
+  { label: "Bölgeler", href: "/gebze-butik-pasta" },
   { label: "Blog", href: "/blog" },
   { label: "SSS", href: "/sikca-sorulan-sorular" },
   { label: "İletişim", href: "/#contact" },
@@ -87,7 +88,20 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="mt-8 pt-6 border-t border-cream/10">
+          <h3 className="font-playfair font-semibold text-cream text-base mb-4 text-center sm:text-left">
+            Hizmet Bölgelerimiz
+          </h3>
+          <div className="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-2 font-inter text-sm">
+            <Link href="/gebze-butik-pasta" className="underline underline-offset-2 decoration-1 decoration-cream/30 hover:text-pink transition-colors">Gebze</Link>
+            <Link href="/darica-butik-pasta" className="underline underline-offset-2 decoration-1 decoration-cream/30 hover:text-pink transition-colors">Darıca</Link>
+            <Link href="/cayirova-butik-pasta" className="underline underline-offset-2 decoration-1 decoration-cream/30 hover:text-pink transition-colors">Çayırova</Link>
+            <Link href="/tuzla-butik-pasta" className="underline underline-offset-2 decoration-1 decoration-cream/30 hover:text-pink transition-colors">Tuzla</Link>
+            <Link href="/pendik-butik-pasta" className="underline underline-offset-2 decoration-1 decoration-cream/30 hover:text-pink transition-colors">Pendik</Link>
+          </div>
+        </div>
+
+        <div className="mt-6 pt-6 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex gap-4 font-inter text-xs text-cream/60">
             {legalLinks.map((link) => (
               <Link key={link.href} href={link.href} className="underline underline-offset-2 decoration-1 decoration-cream/30 hover:text-pink transition-colors">
