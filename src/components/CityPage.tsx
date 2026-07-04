@@ -216,7 +216,7 @@ export default function CityPage({ data }: { data: CityData }) {
               href="https://wa.me/905345687783"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-5 bg-pink-btn hover:bg-pink text-white px-8 py-3 rounded-full font-inter text-sm font-semibold transition-all hover:shadow-lg"
+              className="inline-block mt-5 bg-blue hover:bg-blue/85 text-white px-8 py-3 rounded-full font-inter text-sm font-semibold transition-all hover:shadow-lg"
             >
               WhatsApp ile Sipariş Ver
             </a>

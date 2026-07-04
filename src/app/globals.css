@@ -9,6 +9,7 @@
   --color-gold-light: #E6C9A8;
   --color-dark: #2D2016;
   --color-light-pink: #FDF0F5;
+  --color-blue: #7B9BB5;
 }
 
 @theme inline {
@@ -20,6 +21,7 @@
   --color-gold-light: var(--color-gold-light);
   --color-dark: var(--color-dark);
   --color-light-pink: var(--color-light-pink);
+  --color-blue: var(--color-blue);
 }
 
 @layer base {

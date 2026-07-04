@@ -139,7 +139,7 @@ export default function Navbar() {
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-pink-btn hover:bg-pink text-white px-5 py-2.5 rounded-full font-inter text-sm font-semibold transition-colors"
+            className="bg-blue hover:bg-blue/85 text-white px-5 py-2.5 rounded-full font-inter text-sm font-semibold transition-colors"
           >
             WhatsApp ile Sipariş
           </a>
@@ -200,7 +200,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleNavClick}
-            className="bg-pink-btn hover:bg-pink text-white px-5 py-3 rounded-full font-inter text-sm font-semibold text-center transition-colors mt-2"
+            className="bg-blue hover:bg-blue/85 text-white px-5 py-3 rounded-full font-inter text-sm font-semibold text-center transition-colors mt-2"
           >
             WhatsApp ile Sipariş
           </a>
