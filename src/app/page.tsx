@@ -8,14 +8,14 @@ import { googleReviews } from "@/lib/reviews";
 
 const reviewSchema = {
   "@context": "https://schema.org",
-  "@type": "AggregateRating",
-  "itemReviewed": {
-    "@type": "Bakery",
-    "name": "Miss Butik Pasta",
+  "@type": "Bakery",
+  "name": "Miss Butik Pasta",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "ratingCount": "5",
   },
-  "ratingValue": "5",
-  "bestRating": "5",
-  "ratingCount": "5",
   "review": [
     {
       "@type": "Review",
