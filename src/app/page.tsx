@@ -77,6 +77,8 @@ export default function Home() {
         <CommentStrip name={googleReviews[3].name} text={googleReviews[3].text} />
         <Testimonials />
         <CommentStrip name={googleReviews[4].name} text={googleReviews[4].text} bgLight />
+        <CommentStrip name={googleReviews[5].name} text={googleReviews[5].text} />
+        <CommentStrip name={googleReviews[6].name} text={googleReviews[6].text} bgLight />
         <Contact />
       </main>
       <Footer />

@@ -24,4 +24,14 @@ export const googleReviews = [
     text: "İki ayrı kutlama için iki defa pasta sipariş verdik. İki pastayı da ailecek çok beğendik, teşekkür ederiz. Tasarım işçiliği kadar tadı da çok lezzetliydi. Kutulama kalitesi de gayet güzel. Emeğinize sağlık. Tavsiye ediyoruz.",
     rating: 5,
   },
+  {
+    name: "Esra Korkmaz",
+    text: "İyki sizden şipariş verdim. Beklediğimden çok güzel oldu hem görüntüsü hem lezzetiyle elinize kolunuza sağlık 💕",
+    rating: 5,
+  },
+  {
+    name: "Şerif Ali Özt",
+    text: "gerçekten elinize sağlık çok güzeldi herkese tavsiye ederim✋",
+    rating: 5,
+  },
 ];
