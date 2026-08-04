@@ -14,7 +14,7 @@ const reviewSchema = {
     "@type": "AggregateRating",
     "ratingValue": "5",
     "bestRating": "5",
-    "ratingCount": "5",
+    "ratingCount": "8",
   },
   "review": [
     {
@@ -36,6 +36,13 @@ const reviewSchema = {
       "author": { "@type": "Person", "name": "Zeynep" },
       "reviewBody":
         "Mükemmel, herkese tavsiye ederim. En az beş pasta yaptırdım hepsi de mükemmeldi",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Ercan Erol" },
+      "reviewBody":
+        "Attığım fotoğraftan daha güzel bir pasta, elinize emeğinize sağlık",
       "reviewRating": { "@type": "Rating", "ratingValue": "5" },
     },
   ],
@@ -79,6 +86,7 @@ export default function Home() {
         <CommentStrip name={googleReviews[4].name} text={googleReviews[4].text} bgLight />
         <CommentStrip name={googleReviews[5].name} text={googleReviews[5].text} />
         <CommentStrip name={googleReviews[6].name} text={googleReviews[6].text} bgLight />
+        <CommentStrip name={googleReviews[7].name} text={googleReviews[7].text} />
         <Contact />
       </main>
       <Footer />

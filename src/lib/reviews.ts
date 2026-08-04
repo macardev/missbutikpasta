@@ -34,4 +34,9 @@ export const googleReviews = [
     text: "gerçekten elinize sağlık çok güzeldi herkese tavsiye ederim✋",
     rating: 5,
   },
+  {
+    name: "Ercan Erol",
+    text: "Attığım fotoğraftan daha güzel bir pasta, elinize emeğinize sağlık",
+    rating: 5,
+  },
 ];

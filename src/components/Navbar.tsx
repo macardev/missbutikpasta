@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { WHATSAPP_LINK } from "@/lib/constants";
 
 const navLinks = [
@@ -73,9 +74,13 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between" aria-label="Ana navigasyon">
         <Link href="/" className="flex items-center" aria-label="Miss Butik Pasta Ana Sayfa">
-          <img
+          <Image
             src="/logo.svg"
             alt="Miss Butik Pasta"
+            width={280}
+            height={44}
+            priority
+            unoptimized
             className="h-7 sm:h-8 w-auto"
           />
         </Link>

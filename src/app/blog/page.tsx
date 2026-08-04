@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -15,12 +16,23 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "seker-hamurlu-pasta-saglikli-mi",
+    title: "Şeker Hamurlu Pasta Sağlıklı mı, Lezzetli Olur mu?",
+    excerpt:
+      "Şeker hamurlu pasta sağlıklı mı, lezzetli olur mu? Gıda güvenliği, kaplama kalınlığı, saklama koşulları ve krema/ganaj karşılaştırmasıyla atölyeden gerçek cevaplar.",
+    image: "/images/ozel-tasarim-pasta4.webp",
+    date: "4 Ağustos 2026",
+    isoDate: "2026-08-04",
+    readTime: "11 dk",
+  },
+  {
     slug: "dogum-gunu-pastasi-fikirleri",
     title: "Gebze'de Doğum Günü Pastası: 2026'nın En Popüler Tasarım Fikirleri",
     excerpt:
       "Doğum günü pastası mı arıyorsunuz? 2026'da öne çıkan pasta tasarımları, butik pasta trendleri ve Gebze'de özel tasarım pasta siparişi hakkında her şey.",
     image: "/images/birthday-cake.webp",
     date: "18 Haziran 2026",
+    isoDate: "2026-06-18",
     readTime: "5 dk",
   },
   {
@@ -30,6 +42,7 @@ const posts = [
       "İlk kez özel tasarım pasta mı sipariş edeceksiniz? Hayalinizdeki pastayı anlatmak, doğru boyutu seçmek ve sipariş sürecini yönetmek için kapsamlı rehber.",
     image: "/images/pink-detailed-cake.webp",
     date: "18 Haziran 2026",
+    isoDate: "2026-06-18",
     readTime: "4 dk",
   },
   {
@@ -39,6 +52,7 @@ const posts = [
       "Çocuğunuzun doğum günü için en özel pasta fikirleri. Hayvan figürleri, çizgi film karakterleri, spor temalı ve daha birçok yaratıcı tasarım.",
     image: "/images/mini-bear-cake.webp",
     date: "18 Haziran 2026",
+    isoDate: "2026-06-18",
     readTime: "5 dk",
   },
   {
@@ -48,6 +62,7 @@ const posts = [
       "Butik pasta ile klasik pastane arasındaki temel farklar: üretim süreci, malzeme kalitesi, tasarım özgürlüğü, fiyatlandırma ve daha fazlası.",
     image: "/images/ozel-tasarim-pasta2.webp",
     date: "23 Haziran 2026",
+    isoDate: "2026-06-23",
     readTime: "8 dk",
   },
 ];
@@ -62,7 +77,7 @@ export default function BlogPage() {
             Miss Butik Pasta Blog
           </h1>
           <p className="text-dark/50 font-inter text-sm sm:text-base mb-10 max-w-2xl">
-            Gebze'de butik pasta, özel tasarım pastalar ve tatlı dünyasından
+            Gebze&apos;de butik pasta, özel tasarım pastalar ve tatlı dünyasından
             ilham verici fikirler, rehberler ve ipuçları.
           </p>
 
@@ -74,15 +89,17 @@ export default function BlogPage() {
                 className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-dark/5"
               >
                 <div className="aspect-[4/3] relative bg-cream overflow-hidden">
-                  <img
+                  <Image
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-5 sm:p-6">
                   <div className="flex items-center gap-3 text-xs font-inter text-dark/50 mb-2">
-                    <time dateTime={post.date}>{post.date}</time>
+                    <time dateTime={post.isoDate}>{post.date}</time>
                     <span>&middot;</span>
                     <span>{post.readTime} okuma</span>
                   </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { WHATSAPP_LINK, INSTAGRAM_LINK } from "@/lib/constants";
 
 const footerLinks = [
@@ -24,9 +25,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div className="sm:col-span-2 lg:col-span-1">
-            <img
+            <Image
               src="/logo-light.svg"
               alt="Miss Butik Pasta"
+              width={280}
+              height={44}
+              unoptimized
               className="h-7 sm:h-8 w-auto"
             />
             <p className="mt-3 font-inter text-sm leading-relaxed">

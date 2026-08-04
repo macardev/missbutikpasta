@@ -107,7 +107,11 @@ export const metadata: Metadata = {
   },
 };
 
-const faqs = [
+const faqs: {
+  question: string;
+  answer: string;
+  moreLink?: { href: string; label: string };
+}[] = [
   {
     question: "Butik pasta nedir? Normal pastadan farkı ne?",
     answer: "Butik pasta, kişiye özel olarak tasarlanan, tamamen el yapımı pastalardır. Seri üretim pastanelerin vitrinlerinde hazır bekleyen pastaların aksine, her butik pasta siparişe özel olarak sıfırdan hazırlanır. Miss Butik Pasta'da her pastayı taze malzemelerle, sizin hayalinizdeki tasarıma göre özenle üretiyoruz. Böylece hem görsel hem de lezzet açısından benzersiz bir sonuç elde ediyorsunuz."
@@ -138,7 +142,11 @@ const faqs = [
   },
   {
     question: "Şeker hamurlu pasta sağlıklı mı?",
-    answer: "Pastalarımızda kullandığımız şeker hamuru, gıda güvenliği standartlarına tamamen uygun, kontrollü koşullarda üretilmiş malzemelerdir. Renklendiriciler gıda sınıfı olup sağlığa zararlı değildir. Dilerseniz sizin için şekersiz veya daha hafif alternatifler hazırlayabiliyoruz. Ayrıca herhangi bir alerjiniz varsa lütfen sipariş sırasında bize bildirin — içeriği buna göre düzenleyelim."
+    answer: "Pastalarımızda kullandığımız şeker hamuru, gıda güvenliği standartlarına tamamen uygun, kontrollü koşullarda üretilmiş malzemelerdir. Renklendiriciler gıda sınıfı olup sağlığa zararlı değildir. Dilerseniz sizin için şekersiz veya daha hafif alternatifler hazırlayabiliyoruz. Ayrıca herhangi bir alerjiniz varsa lütfen sipariş sırasında bize bildirin — içeriği buna göre düzenleyelim.",
+    moreLink: {
+      href: "/blog/seker-hamurlu-pasta-saglikli-mi",
+      label: "Şeker hamurlu pasta sağlıklı mı, lezzetli olur mu? Detaylı rehberi okuyun",
+    },
   },
   {
     question: "Siparişimde değişiklik veya iptal yapabilir miyim?",
@@ -189,6 +197,14 @@ export default function FAQPage() {
                 <p className="font-inter text-dark/75 text-sm sm:text-base leading-relaxed">
                   {faq.answer}
                 </p>
+                {faq.moreLink && (
+                  <a
+                    href={faq.moreLink.href}
+                    className="inline-block mt-3 font-inter text-pink hover:text-pink-dark text-sm font-semibold underline underline-offset-2 transition-colors"
+                  >
+                    {faq.moreLink.label} &rarr;
+                  </a>
+                )}
               </div>
             </details>
           ))}

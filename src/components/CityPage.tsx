@@ -101,7 +101,7 @@ export default function CityPage({ data }: { data: CityData }) {
           {/* Services table */}
           <section className="mt-10">
             <h2 className="font-playfair text-2xl sm:text-3xl font-semibold text-dark mb-6">
-              {data.city}'de Sunduğumuz Pasta Çeşitleri
+              {data.city}&apos;de Sunduğumuz Pasta Çeşitleri
             </h2>
             <div className="overflow-x-auto rounded-2xl border border-dark/5">
               <table className="w-full text-left font-inter text-sm">
@@ -126,7 +126,7 @@ export default function CityPage({ data }: { data: CityData }) {
           {/* How to order */}
           <section className="mt-10">
             <h2 className="font-playfair text-2xl sm:text-3xl font-semibold text-dark mb-6">
-              {data.city}'den Butik Pasta Nasıl Sipariş Edilir?
+              {data.city}&apos;den Butik Pasta Nasıl Sipariş Edilir?
             </h2>
             <p className="font-inter text-dark/80 text-base sm:text-lg leading-relaxed mb-6">
               {data.orderIntro}
@@ -198,7 +198,7 @@ export default function CityPage({ data }: { data: CityData }) {
                     href={`/${c.slug}`}
                     className="block p-3 bg-light-pink rounded-xl hover:bg-pink/20 transition-colors font-inter text-sm font-medium text-dark"
                   >
-                    {c.city}'de Butik Pasta &rarr;
+                    {c.city}&apos;de Butik Pasta &rarr;
                   </Link>
                 ))}
             </div>

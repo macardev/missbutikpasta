@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -324,23 +325,10 @@ export default function RootLayout({
   return (
     <html
       lang="tr"
+      data-scroll-behavior="smooth"
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <head>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-DSVWWVV5HQ"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-DSVWWVV5HQ');
-            `,
-          }}
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
@@ -363,6 +351,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
+      <GoogleAnalytics gaId="G-DSVWWVV5HQ" />
     </html>
   );
 }
