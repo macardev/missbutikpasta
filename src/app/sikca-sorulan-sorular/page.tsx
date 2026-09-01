@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { WHATSAPP_LINK } from "@/lib/constants";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -214,7 +215,7 @@ export default function FAQPage() {
           <p className="font-inter text-dark/75 text-sm sm:text-base">
             Başka bir sorunuz mu var?{" "}
             <a
-              href="https://wa.me/905345687783"
+              href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="text-pink hover:text-pink-dark font-semibold underline underline-offset-2 transition-colors"

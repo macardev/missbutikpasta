@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { WHATSAPP_LINK } from "@/lib/constants";
 import Image from "next/image";
 
 const faqItems = [
@@ -840,10 +841,10 @@ export default function SekerHamurluPastaPage() {
               pastayı birlikte planlayabiliriz.
             </p>
             <a
-              href="https://wa.me/905345687783"
+              href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-5 bg-blue hover:bg-blue/85 text-white px-8 py-3 rounded-full font-inter text-sm font-semibold transition-all hover:shadow-lg"
+              className="inline-block mt-5 bg-whatsapp hover:bg-whatsapp-dark text-white px-8 py-3 rounded-full font-inter text-sm font-semibold transition-all hover:shadow-lg"
             >
               WhatsApp ile Sipariş Ver
             </a>

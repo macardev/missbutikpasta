@@ -14,38 +14,14 @@ const reviewSchema = {
     "@type": "AggregateRating",
     "ratingValue": "5",
     "bestRating": "5",
-    "ratingCount": "8",
+    "ratingCount": String(googleReviews.length),
   },
-  "review": [
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Sıla Dönder" },
-      "reviewBody":
-        "iyi ki sizden sipariş vermişim. Pasta beklediğimden bile daha güzel olmuştu. Hem görüntüsüyle hem lezzetiyle herkes bayıldı. Süreç boyunca ilginiz, samimiyetiniz ve emeğiniz gerçekten çok güzeldi.",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    },
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Fatih Yılmaz" },
-      "reviewBody":
-        "İki ayrı kutlama için iki defa pasta sipariş verdik. İki pastayı da ailecek çok beğendik, teşekkür ederiz. Tasarım işçiliği kadar tadı da çok lezzetliydi.",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    },
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Zeynep" },
-      "reviewBody":
-        "Mükemmel, herkese tavsiye ederim. En az beş pasta yaptırdım hepsi de mükemmeldi",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    },
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Ercan Erol" },
-      "reviewBody":
-        "Attığım fotoğraftan daha güzel bir pasta, elinize emeğinize sağlık",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    },
-  ],
+  "review": googleReviews.map((r) => ({
+    "@type": "Review",
+    "author": { "@type": "Person", "name": r.name },
+    "reviewBody": r.text,
+    "reviewRating": { "@type": "Rating", "ratingValue": String(r.rating) },
+  })),
 };
 
 const Gallery = dynamic(() => import("@/components/Gallery"), {
@@ -75,18 +51,21 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <CommentStrip name={googleReviews[0].name} text={googleReviews[0].text} bgLight />
+        <CommentStrip review={googleReviews[0]} bgLight />
         <About />
-        <CommentStrip name={googleReviews[1].name} text={googleReviews[1].text} />
+        <CommentStrip review={googleReviews[1]} />
         <Gallery />
-        <CommentStrip name={googleReviews[2].name} text={googleReviews[2].text} bgLight />
+        <CommentStrip review={googleReviews[2]} bgLight />
         <HowItWorks />
-        <CommentStrip name={googleReviews[3].name} text={googleReviews[3].text} />
+        <CommentStrip review={googleReviews[3]} />
         <Testimonials />
-        <CommentStrip name={googleReviews[4].name} text={googleReviews[4].text} bgLight />
-        <CommentStrip name={googleReviews[5].name} text={googleReviews[5].text} />
-        <CommentStrip name={googleReviews[6].name} text={googleReviews[6].text} bgLight />
-        <CommentStrip name={googleReviews[7].name} text={googleReviews[7].text} />
+        <CommentStrip review={googleReviews[4]} bgLight />
+        <CommentStrip review={googleReviews[5]} />
+        <CommentStrip review={googleReviews[6]} bgLight />
+        <CommentStrip review={googleReviews[7]} />
+        <CommentStrip review={googleReviews[8]} bgLight />
+        <CommentStrip review={googleReviews[9]} />
+        <CommentStrip review={googleReviews[10]} bgLight />
         <Contact />
       </main>
       <Footer />

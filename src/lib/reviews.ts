@@ -1,4 +1,10 @@
-export const googleReviews = [
+export type Review = {
+  name: string;
+  text: string;
+  rating: number;
+};
+
+export const googleReviews: Review[] = [
   {
     name: "Özlem Peker",
     text: "Tadı harikaaaa",
@@ -37,6 +43,21 @@ export const googleReviews = [
   {
     name: "Ercan Erol",
     text: "Attığım fotoğraftan daha güzel bir pasta, elinize emeğinize sağlık",
+    rating: 5,
+  },
+  {
+    name: "Utku Buğra Yılmaz",
+    text: "Özel pasta yaptırdım ilgi ve alakalarıyla çok yardımcı oldular, pastanın tadı muazzam. Uzun zaman sonra bu kadar güzel bir pasta yedim, çok teşekkür ederiz.",
+    rating: 5,
+  },
+  {
+    name: "Mertali",
+    text: "Gerçekten emeğinize sağlık. Hijyenik, özenli, dikkat çekici sunumlar dahilinde el emeği geçmektedir. Herkese tavsiye ederim, herkesin denemesini öngörür öneririm. Mutlaka denemeli ve damak tadına bakmalısınız. Her şey için teşekkürler 🙏🤲",
+    rating: 5,
+  },
+  {
+    name: "Ertunga Turab Öksüz",
+    text: "4 kişilik pasta satın aldık. Ürün kesinlikle en az 6 kişiye servis edilebilir, içindeki malzemelerin tazeliği son derece iyi. Ayrıca krema ve içindeki dolgunun kıvamı inanılmazdı, ellerinize sağlık.",
     rating: 5,
   },
 ];

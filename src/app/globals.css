@@ -10,6 +10,8 @@
   --color-dark: #2D2016;
   --color-light-pink: #FDF0F5;
   --color-blue: #7B9BB5;
+  --color-whatsapp: #25D366;
+  --color-whatsapp-dark: #1EBE57;
 }
 
 @theme inline {
@@ -22,6 +24,8 @@
   --color-dark: var(--color-dark);
   --color-light-pink: var(--color-light-pink);
   --color-blue: var(--color-blue);
+  --color-whatsapp: var(--color-whatsapp);
+  --color-whatsapp-dark: var(--color-whatsapp-dark);
 }
 
 @layer base {
