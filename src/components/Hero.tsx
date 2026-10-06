@@ -46,7 +46,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="bg-whatsapp hover:bg-whatsapp-dark text-white px-8 py-4 rounded-full font-inter text-base font-semibold transition-all hover:shadow-lg hover:shadow-whatsapp/30 w-full sm:w-auto"
             >
-              WhatsApp ile Sipariş Ver
+              WhatsApp&apos;tan Teklif Al
             </a>
             <Link
               href="#gallery"

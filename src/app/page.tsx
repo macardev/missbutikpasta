@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import BlogHighlight from "@/components/BlogHighlight";
 import CommentStrip from "@/components/CommentStrip";
 import dynamic from "next/dynamic";
 import ScrollProgress from "@/components/ScrollProgress";
@@ -51,6 +52,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <BlogHighlight />
         <CommentStrip review={googleReviews[0]} bgLight />
         <About />
         <CommentStrip review={googleReviews[1]} />

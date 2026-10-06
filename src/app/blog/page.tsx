@@ -16,6 +16,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "butik-pasta-ne-demek",
+    title: "Butik Pasta Ne Demek? Anlamı, Özellikleri ve Pastaneden Farkı",
+    excerpt:
+      "Butik pasta ne demek? Kelimenin kökeni, bir pastayı butik yapan 5 temel özellik ve butik pasta, pastane pastası, ev yapımı pasta karşılaştırma tablosu.",
+    image: "/images/white-golden-cake.webp",
+    date: "7 Ekim 2026",
+    isoDate: "2026-10-07",
+    readTime: "5 dk",
+  },
+  {
     slug: "seker-hamurlu-pasta-saglikli-mi",
     title: "Şeker Hamurlu Pasta Sağlıklı mı, Lezzetli Olur mu?",
     excerpt:

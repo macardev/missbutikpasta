@@ -146,7 +146,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="bg-whatsapp hover:bg-whatsapp-dark text-white px-5 py-2.5 rounded-full font-inter text-sm font-semibold transition-colors"
           >
-            WhatsApp ile Sipariş
+            WhatsApp&apos;tan Teklif Al
           </a>
         </div>
 
@@ -207,7 +207,7 @@ export default function Navbar() {
             onClick={handleNavClick}
             className="bg-whatsapp hover:bg-whatsapp-dark text-white px-5 py-3 rounded-full font-inter text-sm font-semibold text-center transition-colors mt-2"
           >
-            WhatsApp ile Sipariş
+            WhatsApp&apos;tan Teklif Al
           </a>
         </div>
       </div>

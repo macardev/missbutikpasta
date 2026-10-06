@@ -115,7 +115,11 @@ const faqs: {
 }[] = [
   {
     question: "Butik pasta nedir? Normal pastadan farkı ne?",
-    answer: "Butik pasta, kişiye özel olarak tasarlanan, tamamen el yapımı pastalardır. Seri üretim pastanelerin vitrinlerinde hazır bekleyen pastaların aksine, her butik pasta siparişe özel olarak sıfırdan hazırlanır. Miss Butik Pasta'da her pastayı taze malzemelerle, sizin hayalinizdeki tasarıma göre özenle üretiyoruz. Böylece hem görsel hem de lezzet açısından benzersiz bir sonuç elde ediyorsunuz."
+    answer: "Butik pasta, kişiye özel olarak tasarlanan, tamamen el yapımı pastalardır. Seri üretim pastanelerin vitrinlerinde hazır bekleyen pastaların aksine, her butik pasta siparişe özel olarak sıfırdan hazırlanır. Miss Butik Pasta'da her pastayı taze malzemelerle, sizin hayalinizdeki tasarıma göre özenle üretiyoruz. Böylece hem görsel hem de lezzet açısından benzersiz bir sonuç elde ediyorsunuz.",
+    moreLink: {
+      href: "/blog/butik-pasta-ne-demek",
+      label: "Butik pasta ne demek? Anlamı ve karşılaştırma tablosu",
+    },
   },
   {
     question: "Özel tasarım pasta siparişi nasıl verilir?",

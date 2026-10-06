@@ -219,7 +219,7 @@ export default function CityPage({ data }: { data: CityData }) {
               rel="noopener noreferrer"
               className="inline-block mt-5 bg-whatsapp hover:bg-whatsapp-dark text-white px-8 py-3 rounded-full font-inter text-sm font-semibold transition-all hover:shadow-lg"
             >
-              WhatsApp ile Sipariş Ver
+              WhatsApp&apos;tan Teklif Al
             </a>
           </section>
         </article>

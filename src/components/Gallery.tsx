@@ -6,29 +6,53 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useIsMobile } from "@/lib/hooks";
 
 const slides = [
-  { id: 1, alt: "Pembe Detaylı Pasta", image: "/images/pink-detailed-cake.webp" },
-  { id: 2, alt: "Yeşil Pasta", image: "/images/green-cake.webp" },
-  { id: 3, alt: "Mini Ayıcıklı Pasta", image: "/images/mini-bear-cake.webp" },
-  { id: 4, alt: "Beyaz & Altın Pasta", image: "/images/white-golden-cake.webp" },
-  { id: 5, alt: "Mor Pasta", image: "/images/purple-cake.webp" },
-  { id: 6, alt: "Ayı Balonlu Pasta", image: "/images/bear-with-baloon.webp" },
-  { id: 7, alt: "Bebek Ayaklı Pasta", image: "/images/baby-feet-cake.webp" },
-  { id: 8, alt: "Futbol Temalı Pasta", image: "/images/soccer-cake.webp" },
-  { id: 9, alt: "Doğum Günü Pastası", image: "/images/birthday-cake.webp" },
-  { id: 10, alt: "Tavşanlı Pasta", image: "/images/sweet-rabbit-cake.webp" },
-  { id: 11, alt: "Pembe Lotus Pastası", image: "/images/pink-lotus-cake.webp" },
-  { id: 12, alt: "Fami Sezer Pastası", image: "/images/fami-sezer-cake.webp" },
-  { id: 13, alt: "Öncesi Sonrası Pastası", image: "/images/before-after-cake.webp" },
-  { id: 14, alt: "Pixel Art Pasta", image: "/images/pixel-art-cake.webp" },
-  { id: 15, alt: "Çilekli Pasta", image: "/images/strawberry-cake.webp" },
-  { id: 16, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 1", image: "/images/ozel-tasarim-pasta1.webp" },
-  { id: 17, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 2", image: "/images/ozel-tasarim-pasta2.webp" },
-  { id: 18, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 3", image: "/images/ozel-tasarim-pasta3.webp" },
-  { id: 19, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 4", image: "/images/ozel-tasarim-pasta4.webp" },
-  { id: 20, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 5", image: "/images/ozel-tasarim-pasta5.webp" },
-  { id: 21, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 6", image: "/images/ozel-tasarim-pasta6.webp" },
-  { id: 22, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 7", image: "/images/ozel-tasarim-pasta7.webp" },
-  { id: 23, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 8", image: "/images/ozel-tasarim-pasta8.webp" },
+  { id: 1, alt: "Pembe gül süslemeli mini pasta ve cupcake hediye kutusu", image: "/images/mini-pasta-cupcake-gullu-set.webp" },
+  { id: 2, alt: "Pembe kurdeleli 'Bride' yazılı vintage gelin pastası", image: "/images/bride-pembe-kurdeleli-pasta.webp" },
+  { id: 3, alt: "Lacivert ve altın yıldızlı 'Welcome to the 20's club' doğum günü pastası", image: "/images/lacivert-yildizli-dogum-gunu-pastasi.webp" },
+  { id: 4, alt: "'İyi ki doğdun Prenses' kırmızı mini pasta ve cupcake seti", image: "/images/prenses-mini-pasta-cupcake-set.webp" },
+  { id: 5, alt: "Pembe krema gülleriyle kaplı doğum günü pastası", image: "/images/pembe-gullu-pasta.webp" },
+  { id: 6, alt: "Turkuaz kalp şeklinde fiyonklu 20 yaş pastası", image: "/images/turkuaz-kalp-pasta.webp" },
+  { id: 7, alt: "'Hello 21' yazılı mini pasta ve çiçekli cupcake kutusu", image: "/images/hello-21-mini-pasta-cupcake-set.webp" },
+  { id: 8, alt: "Mavi dev çiçek süslemeli butik pasta", image: "/images/mavi-cicekli-butik-pasta.webp" },
+  { id: 9, alt: "Pembe yıldız şeklinde 22 yaş pastası", image: "/images/pembe-yildiz-22-yas-pastasi.webp" },
+  { id: 10, alt: "'I love you' yazılı mini pasta ve kalpli cupcake seti", image: "/images/i-love-you-mini-pasta-cupcake-set.webp" },
+  { id: 11, alt: "Siyah fiyonklu ve taçlı 'Love you' kalp pasta", image: "/images/siyah-fiyonklu-kalp-pasta.webp" },
+  { id: 12, alt: "Kırmızı beyaz çizgili sirk temalı 2 yaş pastası", image: "/images/sirk-temali-2-yas-pastasi.webp" },
+  { id: 13, alt: "Mini pasta ve çiçek desenli cupcake kutu seti", image: "/images/mini-pasta-cupcake-cicekli-set.webp" },
+  { id: 14, alt: "Pembe zambak süslemeli beyaz vintage pasta", image: "/images/zambakli-vintage-pasta.webp" },
+  { id: 15, alt: "Sarı fiyonklu vintage butik pasta", image: "/images/sari-fiyonklu-vintage-pasta.webp" },
+  { id: 16, alt: "'Bride to be' pembe çiçekli gelin pastası", image: "/images/bride-to-be-cicekli-pasta.webp" },
+  { id: 17, alt: "Beyaz mini pasta ve altın detaylı cupcake kutusu", image: "/images/mini-pasta-cupcake-beyaz-set.webp" },
+  { id: 18, alt: "Kırmızı kalp şeklinde taçlı 28 yaş pastası", image: "/images/kirmizi-kalp-tacli-pasta.webp" },
+  { id: 19, alt: "Pembe ve yeşil krema çiçekleriyle kaplı doğum günü pastası", image: "/images/krema-cicekli-dogum-gunu-pastasi.webp" },
+  { id: 20, alt: "'Son bekar yaşımız' yazılı beyaz vintage pasta", image: "/images/son-bekar-yasimiz-pastasi.webp" },
+  { id: 21, alt: "Krem rengi yıldız şeklinde butik pasta", image: "/images/krem-yildiz-pasta.webp" },
+  { id: 22, alt: "Çilek süslemeli kırmızı akıtmalı yaş pastası", image: "/images/cilekli-akitmali-yas-pastasi.webp" },
+  { id: 23, alt: "'Bride to be' beyaz vintage gelin pastası", image: "/images/bride-to-be-beyaz-pasta.webp" },
+  { id: 24, alt: "Renkli puantiyeli 1 yaş pastası", image: "/images/puantiyeli-1-yas-pastasi.webp" },
+  { id: 25, alt: "Pembe Detaylı Pasta", image: "/images/pink-detailed-cake.webp" },
+  { id: 26, alt: "Yeşil Pasta", image: "/images/green-cake.webp" },
+  { id: 27, alt: "Mini Ayıcıklı Pasta", image: "/images/mini-bear-cake.webp" },
+  { id: 28, alt: "Beyaz & Altın Pasta", image: "/images/white-golden-cake.webp" },
+  { id: 29, alt: "Mor Pasta", image: "/images/purple-cake.webp" },
+  { id: 30, alt: "Ayı Balonlu Pasta", image: "/images/bear-with-baloon.webp" },
+  { id: 31, alt: "Bebek Ayaklı Pasta", image: "/images/baby-feet-cake.webp" },
+  { id: 32, alt: "Futbol Temalı Pasta", image: "/images/soccer-cake.webp" },
+  { id: 33, alt: "Doğum Günü Pastası", image: "/images/birthday-cake.webp" },
+  { id: 34, alt: "Tavşanlı Pasta", image: "/images/sweet-rabbit-cake.webp" },
+  { id: 35, alt: "Pembe Lotus Pastası", image: "/images/pink-lotus-cake.webp" },
+  { id: 36, alt: "Fami Sezer Pastası", image: "/images/fami-sezer-cake.webp" },
+  { id: 37, alt: "Öncesi Sonrası Pastası", image: "/images/before-after-cake.webp" },
+  { id: 38, alt: "Pixel Art Pasta", image: "/images/pixel-art-cake.webp" },
+  { id: 39, alt: "Çilekli Pasta", image: "/images/strawberry-cake.webp" },
+  { id: 40, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 1", image: "/images/ozel-tasarim-pasta1.webp" },
+  { id: 41, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 2", image: "/images/ozel-tasarim-pasta2.webp" },
+  { id: 42, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 3", image: "/images/ozel-tasarim-pasta3.webp" },
+  { id: 43, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 4", image: "/images/ozel-tasarim-pasta4.webp" },
+  { id: 44, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 5", image: "/images/ozel-tasarim-pasta5.webp" },
+  { id: 45, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 6", image: "/images/ozel-tasarim-pasta6.webp" },
+  { id: 46, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 7", image: "/images/ozel-tasarim-pasta7.webp" },
+  { id: 47, alt: "Miss Butik Pasta Özel Tasarım Pasta - Gebze Butik Pasta 8", image: "/images/ozel-tasarim-pasta8.webp" },
 ];
 
 const slideVariants = {
@@ -66,14 +90,6 @@ export default function Gallery() {
     });
   }, []);
 
-  const goTo = useCallback((index: number) => {
-    setSlideState(([curr]) => {
-      if (index === curr) return [curr, 0];
-      const dir = index > curr ? 1 : -1;
-      return [index, dir];
-    });
-  }, []);
-
   useEffect(() => {
     intervalRef.current = setInterval(() => paginate(1), 4500);
     return () => clearInterval(intervalRef.current);
@@ -88,22 +104,11 @@ export default function Gallery() {
 
   const slide = slides[current];
 
-  const renderDots = (isDesktop: boolean) => (
-    <div className="absolute bottom-4 sm:bottom-5 left-1/2 -translate-x-1/2 flex gap-2 sm:gap-2.5 z-10">
-      {slides.map((_, i) => (
-        <button
-          key={i}
-          onClick={() => goTo(i)}
-          className={`rounded-full transition-all ${
-            isDesktop ? "h-3" : "h-2.5"
-          } ${
-            i === current
-              ? `${isDesktop ? "w-8" : "w-6"} bg-pink`
-              : `${isDesktop ? "w-3" : "w-2.5"} bg-white/60 hover:bg-white/80`
-          }`}
-          aria-label={`Slayt ${i + 1}`}
-        />
-      ))}
+  // Too many slides for one dot each — show a position counter instead.
+  const renderCounter = () => (
+    <div
+      className="absolute bottom-4 sm:bottom-5 left-1/2 -translate-x-1/2 z-10 bg-dark/60 text-white font-inter text-xs sm:text-sm font-medium px-3 py-1 rounded-full tabular-nums">
+      {current + 1} / {slides.length}
     </div>
   );
 
@@ -193,7 +198,7 @@ export default function Gallery() {
               </div>
 
               {renderArrows(false)}
-              {renderDots(false)}
+              {renderCounter()}
             </div>
           ) : (
             <div className="relative overflow-hidden rounded-2xl shadow-sm" style={{ perspective: 1200 }}>
@@ -228,7 +233,7 @@ export default function Gallery() {
               </div>
 
               {renderArrows(true)}
-              {renderDots(true)}
+              {renderCounter()}
             </div>
           )}
         </div>

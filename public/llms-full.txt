@@ -3,7 +3,7 @@
 > Gebze, Kocaeli'de butik pasta ve özel tasarım pasta atölyesi.
 > 2024'ten bu yana hizmet veriyoruz, 200+ özel pasta üretildi.
 > Bu dosya, missbutikpasta.com sitesinin tam metin sürümüdür. Kısa özet için: https://missbutikpasta.com/llms.txt
-> Son güncelleme: 2026-08-04
+> Son güncelleme: 2026-10-07
 
 ---
 
@@ -78,7 +78,7 @@ Atölye Gebze Arapçeşme Mahallesi'ndedir. **Teslimat (kargo veya adrese teslim
 ## Sıkça Sorulan Sorular
 
 **Butik pasta nedir? Normal pastadan farkı ne?**
-Butik pasta, kişiye özel olarak tasarlanan, tamamen el yapımı pastalardır. Seri üretim pastanelerin vitrinlerinde hazır bekleyen pastaların aksine, her butik pasta siparişe özel olarak sıfırdan hazırlanır. Böylece hem görsel hem de lezzet açısından benzersiz bir sonuç elde edilir.
+Butik pasta, kişiye özel olarak tasarlanan, tamamen el yapımı pastalardır. Seri üretim pastanelerin vitrinlerinde hazır bekleyen pastaların aksine, her butik pasta siparişe özel olarak sıfırdan hazırlanır. Böylece hem görsel hem de lezzet açısından benzersiz bir sonuç elde edilir. Detaylı rehber: https://missbutikpasta.com/blog/butik-pasta-ne-demek
 
 **Özel tasarım pasta siparişi nasıl verilir?**
 Galeriden ilham alınabilir veya özgün bir tasarım fikri paylaşılabilir. WhatsApp hattı üzerinden pasta boyutu, lezzet, tasarım detayları ve teslim alma tarihi belirlenir.
@@ -106,6 +106,60 @@ Tasarım ve hazırlık süreci başlamadan önce iletişime geçilmelidir. Figü
 
 **Aynı gün sipariş verebilir miyim?**
 Hayır. Stoklu üretim yapılmadığı ve her pasta sıfırdan hazırlandığı için aynı gün sipariş kabul edilmez.
+
+---
+
+## Blog: Butik Pasta Ne Demek? Anlamı, Özellikleri ve Pastaneden Farkı
+
+URL: https://missbutikpasta.com/blog/butik-pasta-ne-demek
+Yayın tarihi: 7 Ekim 2026 | Okuma süresi: 5 dk
+Hedef sorular: butik pasta ne demek, butik pasta nedir, butik pasta anlamı, butik pasta neden pahalı
+
+### Kısa cevap
+
+Butik pasta, vitrinde hazır bekleyen seri üretim pastaların aksine, sipariş üzerine kişiye özel tasarlanan ve el işçiliğiyle sıfırdan hazırlanan pastadır. Bir kutlama, bir tema ve belirli bir kişi sayısı için bir kez yapılan, tek olan pastadır.
+
+### Kelimenin kökeni
+
+"Butik" Fransızca "boutique" (küçük, seçkin ürünler satan dükkân) sözcüğünden gelir. Türkçede "az sayıda, özenle ve kişiye özel üretilen" anlamında kullanılır. Pastacılıkta boyut ya da fiyatı değil, üretim biçimini anlatır: 8 kişilik sade bir pasta da sipariş üzerine özel tasarlanıp elde hazırlanıyorsa butik pastadır. Eş anlamlı kullanımlar: tasarım pasta, özel tasarım pasta, kişiye özel pasta.
+
+### Bir pastayı butik yapan 5 özellik
+
+1. Sipariş üzerine üretim (stok yok)
+2. Kişiye özel tasarım (tema, renk, isim, figür, kat sayısı)
+3. El işçiliği (şeker hamuru figürler, krema dokuları, boyama, yazı)
+4. Taze ve seçilmiş malzeme (günlük temin, hazır karışım yok)
+5. Üreticiyle doğrudan iletişim (alerji ve diyet bilgisi aracısız mutfağa ulaşır)
+
+Hazır bir pastaya sonradan isim yazdırmak kişiselleştirmedir, butik üretim değildir.
+
+### Karşılaştırma: butik pasta / pastane pastası / ev yapımı pasta
+
+| Kriter | Butik Pasta | Pastane Pastası | Ev Yapımı Pasta |
+|---|---|---|---|
+| Üretim şekli | Sipariş üzerine, az sayıda | Seri üretim, stoklu | Tek seferlik, amatör |
+| Tasarım | Tamamen kişiye özel | Katalogdaki modellerle sınırlı | Ev imkânlarıyla sınırlı |
+| Malzeme | Taze, seçilmiş, günlük temin | Raf ömrüne göre seçilir | Yapan kişinin tercihine bağlı |
+| Hazırlık süresi | En az 2-3 gün önceden sipariş | Hemen alınabilir | Birkaç saat ile bir gün |
+| Fiyat | Tasarım ve kişi sayısına göre özel teklif | Sabit etiket fiyatı | En düşük maliyet |
+| Alerji / diyet uyarlaması | Tarif uyarlanabilir | Genellikle mümkün değil | Mümkün, deneyime bağlı |
+| En uygun olduğu durum | Doğum günü, nişan, düğün, baby shower | Son dakika ihtiyaçları, günlük ikram | Küçük, samimi aile buluşmaları |
+
+### Kimler için uygun
+
+Temalı kutlamalar, hayatta bir kez yaşanan anlar (nişan, düğün, cinsiyet açıklama, evlilik teklifi) ve özel beslenme ihtiyacı olan misafirler. Aynı gün ihtiyaç için uygun değildir. Minimum 8-10 kişilik; katlı pastalar minimum 15 kişilik.
+
+### Sipariş süreci
+
+Fikir WhatsApp'tan paylaşılır → tasarım, figür ve kişi sayısına göre özel fiyat teklifi verilir → onay sonrası üretim başlar, pasta Gebze Arapçeşme'deki atölyeden elden teslim alınır.
+
+### Bu yazının SSS bölümü
+
+**Butik pasta neden daha pahalı?** Seri üretimin maliyet avantajı yoktur; her pasta saatler süren el işçiliği, taze malzeme ve kişiye özel tasarım gerektirir.
+
+**Butik pasta kaç gün önceden sipariş edilmeli?** En az 2-3 gün önceden; katlı, çok figürlü tasarımlar ve düğün/nişan için 1-2 hafta önceden.
+
+**Butik pastanın içi nasıl olur?** İç kısım da kişiye özeldir: pandispanya çeşidi, vanilyalı krema, çikolatalı ganaj veya çilek, frambuaz, muz gibi mevsim meyveleri birlikte seçilir.
 
 ---
 
