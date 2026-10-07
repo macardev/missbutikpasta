@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: data.metaDescription,
   },
   alternates: {
-    canonical: `https://missbutikpasta.com/${data.slug}`,
+    canonical: `https://www.missbutikpasta.com/${data.slug}`,
   },
 };
 

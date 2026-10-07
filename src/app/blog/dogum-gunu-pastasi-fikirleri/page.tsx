@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: "Gebze'de Doğum Günü Pastası: 2026 Tasarım Fikirleri",
     description:
       "Doğum günü pastası fikirleri, butik pasta trendleri ve Gebze'de özel tasarım pasta sipariş rehberi.",
-    images: [{ url: "https://missbutikpasta.com/images/birthday-cake.webp", width: 1200, height: 630, alt: "Doğum Günü Pastası Tasarım Fikirleri" }],
+    images: [{ url: "https://www.missbutikpasta.com/images/birthday-cake.webp", width: 1200, height: 630, alt: "Doğum Günü Pastası Tasarım Fikirleri" }],
   },
 };
 
@@ -73,7 +73,7 @@ const articleSchema = {
   "publisher": { "@type": "Organization", "name": "Miss Butik Pasta" },
   "datePublished": "2026-06-18",
   "dateModified": "2026-06-18",
-  "image": "https://missbutikpasta.com/images/birthday-cake.webp",
+  "image": "https://www.missbutikpasta.com/images/birthday-cake.webp",
 };
 
 const designs = [

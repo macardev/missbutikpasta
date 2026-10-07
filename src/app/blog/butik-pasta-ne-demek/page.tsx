@@ -41,13 +41,13 @@ const articleSchema = {
     "name": "Miss Butik Pasta",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://missbutikpasta.com/logo.svg",
+      "url": "https://www.missbutikpasta.com/logo.svg",
     },
   },
-  "mainEntityOfPage": "https://missbutikpasta.com/blog/butik-pasta-ne-demek",
+  "mainEntityOfPage": "https://www.missbutikpasta.com/blog/butik-pasta-ne-demek",
   "datePublished": "2026-10-07",
   "dateModified": "2026-10-07",
-  "image": "https://missbutikpasta.com/images/white-golden-cake.webp",
+  "image": "https://www.missbutikpasta.com/images/white-golden-cake.webp",
 };
 
 export const metadata: Metadata = {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     "Gebze butik pasta",
   ],
   alternates: {
-    canonical: "https://missbutikpasta.com/blog/butik-pasta-ne-demek",
+    canonical: "https://www.missbutikpasta.com/blog/butik-pasta-ne-demek",
   },
   openGraph: {
     title: "Butik Pasta Ne Demek? Anlamı, Özellikleri ve Pastaneden Farkı",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
       "Butik pasta; sipariş üzerine, kişiye özel tasarlanıp el işçiliğiyle hazırlanan pastadır. Anlamı ve pastane pastasıyla karşılaştırması.",
     images: [
       {
-        url: "https://missbutikpasta.com/images/white-golden-cake.webp",
+        url: "https://www.missbutikpasta.com/images/white-golden-cake.webp",
         width: 1200,
         height: 630,
         alt: "Beyaz ve altın detaylı butik pasta",

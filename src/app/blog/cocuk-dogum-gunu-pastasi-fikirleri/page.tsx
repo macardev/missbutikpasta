@@ -44,7 +44,7 @@ const articleSchema = {
   "publisher": { "@type": "Organization", "name": "Miss Butik Pasta" },
   "datePublished": "2026-06-18",
   "dateModified": "2026-06-18",
-  "image": "https://missbutikpasta.com/images/mini-bear-cake.webp",
+  "image": "https://www.missbutikpasta.com/images/mini-bear-cake.webp",
 };
 
 const themeIdeas = [
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Çocuk Doğum Günü Pastası Fikirleri",
     description: "Çocuğunuzun doğum günü için en özel pasta fikirleri ve temalar.",
-    images: [{ url: "https://missbutikpasta.com/images/mini-bear-cake.webp", width: 1200, height: 630, alt: "Çocuk Doğum Günü Pastası Fikirleri" }],
+    images: [{ url: "https://www.missbutikpasta.com/images/mini-bear-cake.webp", width: 1200, height: 630, alt: "Çocuk Doğum Günü Pastası Fikirleri" }],
   },
 };
 

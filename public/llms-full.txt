@@ -2,7 +2,7 @@
 
 > Gebze, Kocaeli'de butik pasta ve özel tasarım pasta atölyesi.
 > 2024'ten bu yana hizmet veriyoruz, 200+ özel pasta üretildi.
-> Bu dosya, missbutikpasta.com sitesinin tam metin sürümüdür. Kısa özet için: https://missbutikpasta.com/llms.txt
+> Bu dosya, missbutikpasta.com sitesinin tam metin sürümüdür. Kısa özet için: https://www.missbutikpasta.com/llms.txt
 > Son güncelleme: 2026-10-07
 
 ---
@@ -67,18 +67,18 @@ Temel yaklaşım: bir pasta önce lezzetli olmalı, sonra güzel görünmeli. Ta
 
 Atölye Gebze Arapçeşme Mahallesi'ndedir. **Teslimat (kargo veya adrese teslim) hizmeti bulunmamaktadır** — tüm siparişler atölyeden elden teslim edilir. Bunun nedeni, özellikle sıcak havada veya uzun mesafede taşınan şeker hamurlu pastalarda figür kayması ve yüzey terlemesi riskinin artmasıdır.
 
-- Gebze (atölye lokasyonu): https://missbutikpasta.com/gebze-butik-pasta
-- Darıca: https://missbutikpasta.com/darica-butik-pasta
-- Çayırova: https://missbutikpasta.com/cayirova-butik-pasta
-- Tuzla: https://missbutikpasta.com/tuzla-butik-pasta
-- Pendik: https://missbutikpasta.com/pendik-butik-pasta
+- Gebze (atölye lokasyonu): https://www.missbutikpasta.com/gebze-butik-pasta
+- Darıca: https://www.missbutikpasta.com/darica-butik-pasta
+- Çayırova: https://www.missbutikpasta.com/cayirova-butik-pasta
+- Tuzla: https://www.missbutikpasta.com/tuzla-butik-pasta
+- Pendik: https://www.missbutikpasta.com/pendik-butik-pasta
 
 ---
 
 ## Sıkça Sorulan Sorular
 
 **Butik pasta nedir? Normal pastadan farkı ne?**
-Butik pasta, kişiye özel olarak tasarlanan, tamamen el yapımı pastalardır. Seri üretim pastanelerin vitrinlerinde hazır bekleyen pastaların aksine, her butik pasta siparişe özel olarak sıfırdan hazırlanır. Böylece hem görsel hem de lezzet açısından benzersiz bir sonuç elde edilir. Detaylı rehber: https://missbutikpasta.com/blog/butik-pasta-ne-demek
+Butik pasta, kişiye özel olarak tasarlanan, tamamen el yapımı pastalardır. Seri üretim pastanelerin vitrinlerinde hazır bekleyen pastaların aksine, her butik pasta siparişe özel olarak sıfırdan hazırlanır. Böylece hem görsel hem de lezzet açısından benzersiz bir sonuç elde edilir. Detaylı rehber: https://www.missbutikpasta.com/blog/butik-pasta-ne-demek
 
 **Özel tasarım pasta siparişi nasıl verilir?**
 Galeriden ilham alınabilir veya özgün bir tasarım fikri paylaşılabilir. WhatsApp hattı üzerinden pasta boyutu, lezzet, tasarım detayları ve teslim alma tarihi belirlenir.
@@ -99,7 +99,7 @@ Taze yumurta, süt, tereyağı, birinci sınıf un; çikolatalı pastalarda biri
 Hayır. Siparişler Gebze Arapçeşme Mahallesi'ndeki atölyeden, kararlaştırılan saatte teslim alınır. Teslim sırasında pastanın son halini görme ve rötuşları onaylama imkânı vardır.
 
 **Şeker hamurlu pasta sağlıklı mı?**
-Kullanılan şeker hamuru gıda güvenliği standartlarına uygun, kontrollü koşullarda üretilmiş malzemedir. Renklendiriciler gıda sınıfıdır ve sağlığa zararlı değildir. Şekersiz veya daha hafif alternatifler hazırlanabilir. Alerji durumları sipariş sırasında bildirilmelidir. Detaylı rehber: https://missbutikpasta.com/blog/seker-hamurlu-pasta-saglikli-mi
+Kullanılan şeker hamuru gıda güvenliği standartlarına uygun, kontrollü koşullarda üretilmiş malzemedir. Renklendiriciler gıda sınıfıdır ve sağlığa zararlı değildir. Şekersiz veya daha hafif alternatifler hazırlanabilir. Alerji durumları sipariş sırasında bildirilmelidir. Detaylı rehber: https://www.missbutikpasta.com/blog/seker-hamurlu-pasta-saglikli-mi
 
 **Siparişimde değişiklik veya iptal yapabilir miyim?**
 Tasarım ve hazırlık süreci başlamadan önce iletişime geçilmelidir. Figürler hazırlandıktan sonra değişiklik mümkün olmayabilir.
@@ -111,7 +111,7 @@ Hayır. Stoklu üretim yapılmadığı ve her pasta sıfırdan hazırlandığı 
 
 ## Blog: Butik Pasta Ne Demek? Anlamı, Özellikleri ve Pastaneden Farkı
 
-URL: https://missbutikpasta.com/blog/butik-pasta-ne-demek
+URL: https://www.missbutikpasta.com/blog/butik-pasta-ne-demek
 Yayın tarihi: 7 Ekim 2026 | Okuma süresi: 5 dk
 Hedef sorular: butik pasta ne demek, butik pasta nedir, butik pasta anlamı, butik pasta neden pahalı
 
@@ -165,7 +165,7 @@ Fikir WhatsApp'tan paylaşılır → tasarım, figür ve kişi sayısına göre 
 
 ## Blog: Şeker Hamurlu Pasta Sağlıklı mı, Lezzetli Olur mu?
 
-URL: https://missbutikpasta.com/blog/seker-hamurlu-pasta-saglikli-mi
+URL: https://www.missbutikpasta.com/blog/seker-hamurlu-pasta-saglikli-mi
 Yayın tarihi: 4 Ağustos 2026 | Okuma süresi: 11 dk
 Hedef sorular: şeker hamurlu pasta sağlıklı mı, şeker hamuru zararlı mı, şeker hamurlu pasta lezzetli olur mu, şekersiz pasta alternatifi
 
@@ -270,7 +270,7 @@ Müşteriler tamamen şeker hamuru kaplı "ağır" görünümden uzaklaşıp; da
 
 ## Blog: Butik Pasta ile Pastane Arasındaki Farklar
 
-URL: https://missbutikpasta.com/blog/butik-pasta-ile-pastane-arasindaki-farklar
+URL: https://www.missbutikpasta.com/blog/butik-pasta-ile-pastane-arasindaki-farklar
 Yayın tarihi: 23 Haziran 2026 | Okuma süresi: 8 dk
 
 Butik pasta ile klasik pastane arasındaki en temel fark, kişiselleştirme ve el yapımı üretim anlayışıdır. Butik pasta atölyesi her siparişi sıfırdan ve yalnızca müşteriye özel tasarlar.
@@ -285,9 +285,9 @@ Fiyat farkının bileşenleri: el işçiliği, premium malzeme, sipariş bazlı 
 
 ## Blog: Diğer Yazılar
 
-- **Gebze'de Doğum Günü Pastası: 2026'nın En Popüler Tasarım Fikirleri** (18 Haziran 2026) — 2026'da öne çıkan pasta tasarımları, butik pasta trendleri ve Gebze'de özel tasarım pasta siparişi: https://missbutikpasta.com/blog/dogum-gunu-pastasi-fikirleri
-- **Özel Tasarım Pasta Nasıl Sipariş Edilir? Adım Adım Rehber** (18 Haziran 2026) — Hayalinizdeki pastayı anlatmak, doğru boyutu seçmek ve sipariş sürecini yönetmek: https://missbutikpasta.com/blog/ozel-tasarim-pasta-siparis-rehberi
-- **Çocuk Doğum Günü Pastası Fikirleri: En Sevilen Tema ve Karakterler** (18 Haziran 2026) — Hayvan figürleri, çizgi film karakterleri, spor temalı tasarımlar: https://missbutikpasta.com/blog/cocuk-dogum-gunu-pastasi-fikirleri
+- **Gebze'de Doğum Günü Pastası: 2026'nın En Popüler Tasarım Fikirleri** (18 Haziran 2026) — 2026'da öne çıkan pasta tasarımları, butik pasta trendleri ve Gebze'de özel tasarım pasta siparişi: https://www.missbutikpasta.com/blog/dogum-gunu-pastasi-fikirleri
+- **Özel Tasarım Pasta Nasıl Sipariş Edilir? Adım Adım Rehber** (18 Haziran 2026) — Hayalinizdeki pastayı anlatmak, doğru boyutu seçmek ve sipariş sürecini yönetmek: https://www.missbutikpasta.com/blog/ozel-tasarim-pasta-siparis-rehberi
+- **Çocuk Doğum Günü Pastası Fikirleri: En Sevilen Tema ve Karakterler** (18 Haziran 2026) — Hayvan figürleri, çizgi film karakterleri, spor temalı tasarımlar: https://www.missbutikpasta.com/blog/cocuk-dogum-gunu-pastasi-fikirleri
 
 ---
 
@@ -313,16 +313,16 @@ Tümü 5/5 puanlıdır.
 - **Telefon:** 0534 568 77 83
 - **WhatsApp:** https://wa.me/905345687783
 - **Instagram:** https://www.instagram.com/miss.butikpasta
-- **Web Sitesi:** https://missbutikpasta.com
+- **Web Sitesi:** https://www.missbutikpasta.com
 
 ---
 
 ## Site Haritası
 
-- Ana Sayfa: https://missbutikpasta.com
-- Galeri: https://missbutikpasta.com/#gallery
-- Blog: https://missbutikpasta.com/blog
-- Sıkça Sorulan Sorular: https://missbutikpasta.com/sikca-sorulan-sorular
-- KVKK: https://missbutikpasta.com/kvkk
-- Çerez Politikası: https://missbutikpasta.com/cerez-politikasi
-- XML Site Haritası: https://missbutikpasta.com/sitemap.xml
+- Ana Sayfa: https://www.missbutikpasta.com
+- Galeri: https://www.missbutikpasta.com/#gallery
+- Blog: https://www.missbutikpasta.com/blog
+- Sıkça Sorulan Sorular: https://www.missbutikpasta.com/sikca-sorulan-sorular
+- KVKK: https://www.missbutikpasta.com/kvkk
+- Çerez Politikası: https://www.missbutikpasta.com/cerez-politikasi
+- XML Site Haritası: https://www.missbutikpasta.com/sitemap.xml

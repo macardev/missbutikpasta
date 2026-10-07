@@ -57,13 +57,13 @@ const articleSchema = {
     "name": "Miss Butik Pasta",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://missbutikpasta.com/logo.svg",
+      "url": "https://www.missbutikpasta.com/logo.svg",
     },
   },
-  "mainEntityOfPage": "https://missbutikpasta.com/blog/seker-hamurlu-pasta-saglikli-mi",
+  "mainEntityOfPage": "https://www.missbutikpasta.com/blog/seker-hamurlu-pasta-saglikli-mi",
   "datePublished": "2026-08-04",
   "dateModified": "2026-08-04",
-  "image": "https://missbutikpasta.com/images/ozel-tasarim-pasta4.webp",
+  "image": "https://www.missbutikpasta.com/images/ozel-tasarim-pasta4.webp",
 };
 
 export const metadata: Metadata = {
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     "Gebze butik pasta",
   ],
   alternates: {
-    canonical: "https://missbutikpasta.com/blog/seker-hamurlu-pasta-saglikli-mi",
+    canonical: "https://www.missbutikpasta.com/blog/seker-hamurlu-pasta-saglikli-mi",
   },
   openGraph: {
     title: "Şeker Hamurlu Pasta Sağlıklı mı, Lezzetli Olur mu?",
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
       "Şeker hamurlu pasta sağlıklı mı, lezzetli olur mu? Gebze butik pasta atölyesinden gerçek cevaplar.",
     images: [
       {
-        url: "https://missbutikpasta.com/images/ozel-tasarim-pasta4.webp",
+        url: "https://www.missbutikpasta.com/images/ozel-tasarim-pasta4.webp",
         width: 1200,
         height: 630,
         alt: "Şeker hamuru figürlü butik pasta",

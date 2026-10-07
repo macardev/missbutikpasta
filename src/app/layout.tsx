@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Miss Butik Pasta" }],
   creator: "Miss Butik Pasta",
   publisher: "Miss Butik Pasta",
-  metadataBase: new URL("https://missbutikpasta.com"),
+  metadataBase: new URL("https://www.missbutikpasta.com"),
   alternates: {
     canonical: "/",
   },
@@ -52,13 +52,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: "https://missbutikpasta.com",
+    url: "https://www.missbutikpasta.com",
     title: "Miss Butik Pasta | Gebze Özel Tasarım Pasta & Tatlı",
     description: "Kocaeli Gebze'de butik pasta, doğum günü pastası, nişan pastası ve özel tasarım tatlılar. El yapımı, butik üretim.",
     siteName: "Miss Butik Pasta",
     images: [
       {
-        url: "https://missbutikpasta.com/images/og-image.webp",
+        url: "https://www.missbutikpasta.com/images/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Miss Butik Pasta - Gebze'nin En Tatlı Atölyesi",
@@ -87,8 +87,8 @@ const localBusinessSchema = {
   name: "Miss Butik Pasta",
   description: "Gebze'de butik pasta, doğum günü pastası, nişan pastası, düğün pastası ve özel tasarım pastalar. 2 yıldır hizmet veriyoruz, 200+ özel pasta ürettik. El yapımı, butik üretim.",
   foundingDate: "2024",
-  image: "https://missbutikpasta.com/images/og-image.webp",
-  url: "https://missbutikpasta.com",
+  image: "https://www.missbutikpasta.com/images/og-image.webp",
+  url: "https://www.missbutikpasta.com",
   telephone: "+905345687783",
   priceRange: "$$",
   address: {
@@ -139,16 +139,16 @@ const imageGallerySchema = {
   "@type": "ImageGallery",
   "name": "Miss Butik Pasta Özel Tasarım Pasta Galerisi",
   "description": "Gebze özel tasarım pasta, doğum günü pastası ve butik tatlı galerisi - Miss Butik Pasta",
-  "url": "https://missbutikpasta.com/#gallery",
+  "url": "https://www.missbutikpasta.com/#gallery",
   "image": [
-    "https://missbutikpasta.com/images/ozel-tasarim-pasta1.webp",
-    "https://missbutikpasta.com/images/ozel-tasarim-pasta2.webp",
-    "https://missbutikpasta.com/images/ozel-tasarim-pasta3.webp",
-    "https://missbutikpasta.com/images/ozel-tasarim-pasta4.webp",
-    "https://missbutikpasta.com/images/ozel-tasarim-pasta5.webp",
-    "https://missbutikpasta.com/images/ozel-tasarim-pasta6.webp",
-    "https://missbutikpasta.com/images/ozel-tasarim-pasta7.webp",
-    "https://missbutikpasta.com/images/ozel-tasarim-pasta8.webp",
+    "https://www.missbutikpasta.com/images/ozel-tasarim-pasta1.webp",
+    "https://www.missbutikpasta.com/images/ozel-tasarim-pasta2.webp",
+    "https://www.missbutikpasta.com/images/ozel-tasarim-pasta3.webp",
+    "https://www.missbutikpasta.com/images/ozel-tasarim-pasta4.webp",
+    "https://www.missbutikpasta.com/images/ozel-tasarim-pasta5.webp",
+    "https://www.missbutikpasta.com/images/ozel-tasarim-pasta6.webp",
+    "https://www.missbutikpasta.com/images/ozel-tasarim-pasta7.webp",
+    "https://www.missbutikpasta.com/images/ozel-tasarim-pasta8.webp",
   ],
 };
 
@@ -159,7 +159,7 @@ const productListSchema = {
   "@type": "ItemList",
   "name": "Miss Butik Pasta Hizmetleri",
   "description": "Miss Butik Pasta'nın özel tasarım pasta ve tatlı hizmetleri.",
-  "url": "https://missbutikpasta.com",
+  "url": "https://www.missbutikpasta.com",
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -306,13 +306,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Ana Sayfa",
-      "item": "https://missbutikpasta.com",
+      "item": "https://www.missbutikpasta.com",
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Sıkça Sorulan Sorular",
-      "item": "https://missbutikpasta.com/sikca-sorulan-sorular",
+      "item": "https://www.missbutikpasta.com/sikca-sorulan-sorular",
     },
   ],
 };

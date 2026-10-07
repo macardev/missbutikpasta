@@ -3,4 +3,4 @@ Allow: /
 Allow: /_next/static/
 Allow: /_next/image/
 
-Sitemap: https://missbutikpasta.com/sitemap.xml
+Sitemap: https://www.missbutikpasta.com/sitemap.xml

@@ -16,7 +16,7 @@ const articleSchema = (data: CityData) => ({
   dateModified: "2026-07-04",
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": `https://missbutikpasta.com/${data.slug}`,
+    "@id": `https://www.missbutikpasta.com/${data.slug}`,
   },
 });
 

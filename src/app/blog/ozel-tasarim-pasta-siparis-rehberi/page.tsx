@@ -44,7 +44,7 @@ const articleSchema = {
   "publisher": { "@type": "Organization", "name": "Miss Butik Pasta" },
   "datePublished": "2026-06-18",
   "dateModified": "2026-06-18",
-  "image": "https://missbutikpasta.com/images/pink-detailed-cake.webp",
+  "image": "https://www.missbutikpasta.com/images/pink-detailed-cake.webp",
 };
 
 const howToSchema = {
@@ -101,7 +101,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Özel Tasarım Pasta Nasıl Sipariş Edilir?",
     description: "Adım adım özel tasarım pasta sipariş rehberi. İlk kez sipariş verecekler için ipuçları.",
-    images: [{ url: "https://missbutikpasta.com/images/pink-detailed-cake.webp", width: 1200, height: 630, alt: "Özel Tasarım Pasta Sipariş Rehberi" }],
+    images: [{ url: "https://www.missbutikpasta.com/images/pink-detailed-cake.webp", width: 1200, height: 630, alt: "Özel Tasarım Pasta Sipariş Rehberi" }],
   },
 };
 
